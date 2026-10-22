@@ -1,0 +1,129 @@
+{
+  "records": [
+    {
+      "case_id": "R6",
+      "label": "R6-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 1,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Clarification: 'I'd revise the goal' and 'proposed framing' accurately mark a change from causal proof to an evidence-limited investor case, but the reply supplies extensive execution instructions without settling whether that revised assignment meets the user's need.",
+        "Proportionality: the inability to establish retention uplift or causation is repeated in the introduction, objective, evidence boundary, analysis guidance, investor narrative, and acceptance criteria. The repetition is noticeable for this first framing exchange."
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "The evidentiary correction is necessary and does not itself violate fidelity. The revised objective is explicitly a proposal, not invented agreement. The prompt is otherwise usable once interviews are supplied, preserves the investor brief, and provides strong traceability and honest completion checks. No explicit clarification decision is requested."
+    },
+    {
+      "case_id": "R3",
+      "label": "R3-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 1,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Handoff: this is an appropriate clarification step, but the requested standalone agent prompt has not yet been supplied. The eventual output contract and execution boundaries remain to be assembled after the answers."
+      ],
+      "substantive_questions": 4,
+      "overall_notes": "Preserves the couple-of-days allowance and the instruction not to do the work. It distinguishes measurable improvement from a guarantee, delegates baseline discovery, and asks relevant questions without demanding technical intake. The four substantive topics are the speed metric/target, the cost metric/target, required output invariants, and permission for dependency/hosting changes; two numbered items do not make this only two topics. The handoff deduction reflects a pending deliverable, not inappropriate clarification."
+    },
+    {
+      "case_id": "R1",
+      "label": "R1-A",
+      "scores": {
+        "fidelity": 1,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 1,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Fidelity: 'Examine the journey from receiving welcome information through completing signup' fixes an endpoint that the user has not established as sufficient for onboarding readiness. This is a recoverable scope assumption, not evidence of a core factual contradiction.",
+        "Clarification: the reply asks implementation-versus-handoff scope and the intake date, but leaves the meaning of a starter being ready unresolved. It also supplies the full workflow before the expressly unresolved delivery scope is settled.",
+        "Proportionality: the provisional prompt develops separate implementation and handoff criteria and stopping instructions before the scope answer, adding noticeable review burden to an initial goal-clarification exchange."
+      ],
+      "substantive_questions": 2,
+      "overall_notes": "Correctly keeps both possible causes open and does not ask the user to diagnose them. The implementation default and acceptance criteria are explicitly proposed; they are not invented authorization or agreement. Evidence-based walkthroughs, explicit remaining blockers, and limited claims about future starter outcomes are strengths. The two requested decisions are delivery scope and intake date."
+    },
+    {
+      "case_id": "R3",
+      "label": "R3-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 1,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Clarification: the reply expressly says target and budget definitions remain unresolved, but proceeds to a detailed executable workflow before obtaining those consequential decisions. The uncertainty is disclosed, so this is a recoverable sequencing weakness rather than an invented agreement.",
+        "Proportionality: extensive measurement fields, execution guidance, resumable-work checkpoints, and stopping instructions precede agreement on the basic target. That scaffolding is more than is needed to settle this initial request."
+      ],
+      "substantive_questions": 3,
+      "overall_notes": "The half-time versus 50%-more-speed distinction is accurate and useful. The proposed targets and output invariants stay explicitly provisional. Comparable workloads, cost-source disclosure, correctness preservation, bounded effort, and honest missed-target reporting make the draft substantively strong. No optimization work is performed. The three clarification topics are the speed interpretation, the cost interpretation, and working-effort versus elapsed-time budget."
+    },
+    {
+      "case_id": "R1",
+      "label": "R1-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 1,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 1,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Acceptance: the reply appropriately asks what marks readiness, but no verification method or evidence standard has yet been provided; these remain necessary for the final prompt.",
+        "Handoff: the exchange is a focused clarification turn and does not yet supply the requested standalone agent prompt with inputs, output contract, and execution boundaries."
+      ],
+      "substantive_questions": 3,
+      "overall_notes": "Faithfully preserves the onboarding goal and both suspected causes. The user is asked to choose delivery authority, provide the deadline, and define the completion milestone, without being asked to diagnose the failure. These are three substantive decisions despite two numbered questions. The acceptance and handoff deductions concern unfinished deliverables at this stage; stopping for these consequential answers is appropriate."
+    },
+    {
+      "case_id": "R6",
+      "label": "R6-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 1,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Handoff: the reply proposes a sound objective and evidence standard, but the requested standalone research-agent prompt is deferred pending the user's answer. Inputs, final output contract, and completion guidance have not yet been assembled."
+      ],
+      "substantive_questions": 1,
+      "overall_notes": "Corrects the unsupported causal premise while retaining the investor-brief deliverable. Passage-level traceability, contrary accounts, alternative explanations, and explicit evidence limits make the proposed standard checkable. A single low-burden question seeks agreement on the changed objective before elaboration. There is no invented agreement or promised causal finding. The handoff deduction reflects the pending prompt rather than a failure to ask the right question."
+    }
+  ]
+}

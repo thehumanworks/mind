@@ -1,0 +1,16 @@
+{
+  "responses": [
+    {
+      "case_id": "R1",
+      "reply": "Your goal sounds like getting new starters through onboarding successfully before the next intake. The agent can investigate whether the welcome information, signup flow, or both cause the stalls; you don’t need to diagnose that yourself.\n\nTwo things will shape the prompt:\n\n1. Should the agent **investigate and deliver a prioritized fix plan for your team**, or **investigate, make changes, and verify the onboarding journey**?\n2. When does the next intake begin, and what marks a new starter as ready—completed signup, access to everything they need, or another milestone?"
+    },
+    {
+      "case_id": "R3",
+      "reply": "Two decisions will make the optimization target checkable:\n\n1. By **“50% faster and cheaper,”** do you mean **half the time and half the cost per completed report**, using the same workload? Or does “faster” mean higher throughput, and “cheaper” mean a different cost measure or target?\n2. What must stay unchanged—exact report bytes, content and calculations, layout, or another standard? Are changes to dependencies or hosting allowed?\n\nThe prompt can assign the executor to establish the current baseline and select representative reports; you don’t need benchmark numbers now. I’ll preserve the couple-of-days budget and require comparable before-and-after evidence, with any unmet target reported honestly. We’re only shaping the prompt at this stage."
+    },
+    {
+      "case_id": "R6",
+      "reply": "The interviews alone cannot establish that retention increased or that the new trial caused an increase. They can provide qualitative evidence about customers’ experiences and their stated reasons for staying or leaving.\n\nI suggest reframing the objective as **a compelling investor brief assessing what last month’s customer interviews support about the trial’s possible contribution to retention**. The agent would trace findings to interview passages, consider contrary accounts and alternative explanations, and make the evidence’s limits clear. It would also explain what retention data and comparison would be needed to evaluate causality.\n\nShould I build the prompt around that objective, treating a causal retention benefit as a hypothesis to test?"
+    }
+  ]
+}

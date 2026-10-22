@@ -1,0 +1,32 @@
+# Evidence and design limits
+
+Treat this workflow as an engineering synthesis. The sources below motivate its components; none tests this exact skill or establishes a universal prompt template. Prefer the primary sources when making a specific empirical claim.
+
+## Clarification and a current specification
+
+- **Qian et al., [Tell Me More! Towards Implicit User Intention Understanding of Language Model Driven Agents](https://aclanthology.org/2024.acl-long.61/), ACL 2024.** Separates eliciting missing intent and summarizing an actionable goal from downstream execution. Supports the skill's upstream role and its distinction between essential and optional unknowns. Its trained interaction system and partly simulated evaluation do not establish the effectiveness of a prompt-only skill.
+- **Zhang and Choi, [Clarify When Necessary](https://arxiv.org/abs/2311.09469), 2023.** Separates deciding when to ask, forming a question, and using the answer. Supports asking about decision-relevant intent rather than questioning whenever information is absent. Its controlled, narrow tasks and oracle clarification pairs limit transfer to open-ended negotiation.
+- **Laban et al., [LLMs Get Lost in Multi-Turn Conversation](https://www.microsoft.com/en-us/research/publication/llms-get-lost-in-multi-turn-conversation/), 2025.** Finds failures associated with incrementally supplied instructions and early assumptions in simulated tasks. Motivates consolidating the current specification and replacing superseded assumptions. It does not prove that every natural conversation has the same failure rate or that consolidation guarantees success.
+
+## Shared understanding and low-friction revision
+
+- **Horvitz, [Principles of Mixed-Initiative User Interfaces](https://www.microsoft.com/en-us/research/publication/principles-mixed-initiative-user-interfaces/), CHI 1999.** Accounts for goal uncertainty, action costs, and the user's attention. Motivates proportionate clarification, helpful partial drafts, and easy refinement. It provides design principles, not a fixed question quota or confidence threshold.
+- **Clark and Brennan, [Grounding in Communication](https://web.stanford.edu/~clark/1990s/Clark%2C%20H.H.%20_%20Brennan%2C%20S.E.%20_Grounding%20in%20communication_%201991.pdf), 1991.** Describes collaborative understanding sufficient for the current purpose, including provisional contributions and repair. Motivates scoped agreement and integrating feedback without requiring a separate ritual signoff. Human communicative acceptance is not authorization to perform an action.
+- **Amershi et al., [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/), CHI 2019.** Recommends easy correction, clarification under uncertainty, recent-context retention, and targeted feedback. Supports stable settled choices and localized revisions. Practitioner evaluations of the guidelines do not validate this skill's downstream outcomes.
+
+## Outcomes, constraints, and acceptance evidence
+
+- **NASA, [Stakeholder Expectations Definition](https://www.nasa.gov/reference/4-1-stakeholder-expectations-definition/) and [How to Write a Good Requirement](https://www.nasa.gov/reference/appendix-c-how-to-write-a-good-requirement/), Systems Engineering Handbook.** Supports capturing purpose, bounds, assumptions, traceability, consistency, feasibility, and verifiability. Motivates an intent record and observable conditions without false precision. Scale formal engineering processes to the request; do not import mandatory approval ceremonies.
+- **NASA, [Product Validation](https://www.nasa.gov/reference/5-4-product-validation/).** Distinguishes conformity to requirements from serving stakeholder needs and describes several ways to obtain evidence. Motivates checking both prompt fidelity and whether the requested result would serve its purpose. Prompt review does not verify the eventual task result.
+- **van Lamsweerde, [Goal-Oriented Requirements Engineering: A Guided Tour](https://webperso.info.ucl.ac.be/~avl/files/RE01.pdf), 2001.** Connects goals to refinements, alternatives, conflicts, constraints, and softer preferences. Motivates preserving the user's outcome while allowing useful choices of method. It supplies no universal optimization rule and does not justify deleting an explicit method requirement.
+
+## Long work and executor limitations
+
+- **Anthropic, [Effective context engineering for AI agents](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents), 2025.** Motivates clear, minimally sufficient instructions, selective context, and supported continuity mechanisms. It is engineering guidance, not proof of a universal syntax.
+- **Anthropic, [Effective harnesses for long-running agents](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents), 2025, and [Harness design for long-running application development](https://www.anthropic.com/research/harness-design-long-running-apps), 2026.** Motivates outcome-level specifications, explicit completion evidence, and continuity appropriate to the environment. Coding experiments and changing orchestration choices do not justify requiring fixed sprints, separate evaluators, or progress files for every request.
+- **Anthropic, [Demystifying evals for AI agents](https://www.anthropic.com/research/demystifying-evals-for-ai-agents), 2026.** Distinguishes the final statement from actual resulting state and recommends explicit, judgeable outcomes. Motivates evidence-backed completion criteria without imposing a test suite on every small task.
+- **Yao et al., [τ-bench](https://arxiv.org/abs/2406.12045), 2024.** Evaluates tool-agent-user interaction and highlights the difference between a correct end state and compliance with process constraints. Motivates preserving permissions and required procedures alongside outcomes. Its benchmark results do not characterize every current executor.
+
+## Claims to avoid
+
+Do not claim that this workflow guarantees agreement, fewer questions, better task outcomes, identical results across runs, or reliable long-horizon autonomy. Do not attach arbitrary percentages, question counts, or model-specific tricks to these sources. A reusable prompt improves the explicitness of a specification only insofar as it actually preserves and clarifies the user's intent; actual execution still depends on the agent, tools, inputs, environment, and evaluation.

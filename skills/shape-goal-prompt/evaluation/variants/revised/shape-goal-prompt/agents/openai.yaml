@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shape Goal Prompt"
+  short_description: "Turn rough requests into agreed, testable agent prompts"
+  default_prompt: "Use $shape-goal-prompt to clarify my request and turn it into an execution prompt with goals and acceptance criteria."

@@ -1,0 +1,43 @@
+schema_version: 1
+decision_to_make: null
+workflow: null
+scope_units: null
+accepted_outcome_definition: null
+quality_floor: null
+minimum_worthwhile_improvement: null
+unacceptable_tradeoffs: []
+baseline: null
+intervention: null
+held_constant: [task_set, model, tools, authority, budget]
+unavoidable_differences: []
+task_set:
+  frozen_manifest_digest: null
+  paired_task_ids: []
+  positive_negative_inconclusive_mix: null
+  prospective_exclusion_rules: []
+  leakage_controls: []
+  adversarial_and_recovery_cases: []
+run_design:
+  randomisation_seed: null
+  repetitions_per_task: null
+  total_budget_per_arm: null
+  timeout_and_censoring_policy: null
+  failed_runs_remain_in_denominators: true
+adjudication:
+  reviewer: null
+  blinded_to_arm: null
+  ground_truth_scope: null
+  disagreement_resolution: null
+analysis:
+  primary_quality_metric: null
+  primary_efficiency_metric: null
+  fixed_budget_comparison: null
+  fixed_quality_comparison: null
+  confidence_interval_method: null
+  currency_and_costing_period: null
+  integration_and_maintenance_allocation: null
+  human_cost_rate: null
+  deduplication_and_novelty_rule: null
+stopping_rule: null
+adoption_rule: null
+recovery_or_rollback_plan: null

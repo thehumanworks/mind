@@ -1,0 +1,33 @@
+[
+  {
+    "id": "D1",
+    "request": "Did you fix the typo on the settings button?",
+    "facts": "The button label was changed from 'Recieve updates' to 'Receive updates' in the local branch. The existing UI check passed. The change has not been released. No user decision is needed."
+  },
+  {
+    "id": "D2",
+    "request": "Can I merge the retry fix? Give me a quick handoff.",
+    "facts": "PR #31 changes retries so a cancelled request does not start another attempt. All 112 Linux tests passed, including 8 cancellation regression tests. The required macOS gate has not run because the runner is unavailable. The repository requires both Linux and macOS checks before merge. No production test or deployment occurred. The PR is ready for review. Next work: rerun the macOS gate when the runner is available."
+  },
+  {
+    "id": "D3",
+    "request": "Which export service should we choose? I need a decision before my next meeting.",
+    "facts": "The goal is to replace the current service within 5 working days and stay under £60/month. Option A costs £40/month, takes 2 days to migrate, and passed a restore drill. Option B has no subscription fee, takes 3 weeks to migrate, and has no restore test. Both support the required file formats. These are supplied scenario facts; no research or purchase is needed. The user is choosing, not authorizing a purchase."
+  },
+  {
+    "id": "D4",
+    "request": "Explain the duplicate-payment protection to me as a product manager. What does the customer get?",
+    "facts": "For repeated checkout requests with the same request ID within 24 hours, the service returns the original receipt and creates no additional charge. A different ID or a retry after 24 hours can create a new charge. A local automated test sent the same ID twice and observed one charge record. No live payment-provider test was performed. Explain the mechanism and its practical limit without code."
+  },
+  {
+    "id": "D5",
+    "request": "Where are we with the export timeout? I have lost track.",
+    "facts": "The export at 14:05 failed with connect_timeout. Retrying the same export at 14:08 succeeded. One trace has been inspected. The cause is unknown; database load is a hypothesis, not a finding. No code or infrastructure changes have been made. The next authorized action is to compare connection-pool and database-queue metrics during the failed request. No decision is needed from the user yet."
+  },
+  {
+    "id": "D6",
+    "request": "Give me the steps to rotate the key in my local Atlas demo. I know the CLI; keep it practical.",
+    "facts": "These are the complete fictional CLI facts for this task: Before rotation, stop the local worker with `atlas worker stop`. Run `atlas key rotate --dry-run` to preview. Proceed only if the preview says `scope=local` and `affected=1`; otherwise stop and inspect the configuration. Apply with `atlas key rotate --scope local`. Check with `atlas key verify`; success is exactly `valid`. Restart using `atlas worker start`. Production key rotation is outside this task. Do not actually execute commands."
+  }
+]
+

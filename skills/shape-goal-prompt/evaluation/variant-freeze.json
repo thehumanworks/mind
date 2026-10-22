@@ -1,0 +1,8 @@
+{
+  "variants/compact/shape-goal-prompt/SKILL.md": "25d1bfaae24e81a5fb833ed0f189dacbbe231c16caff47826b13e6219c57020e",
+  "variants/compact/shape-goal-prompt/references/sources.md": "d6de556a45238bd47d02e9a46ee85350e5511e5e2e0cdd271f11a00eefa3bd1f",
+  "variants/compact/shape-goal-prompt/references/template-and-examples.md": "ea9142594ded8693f10d9819a7cb36bc7fd87014505824a129c038b64a23beef",
+  "variants/structured/shape-goal-prompt/SKILL.md": "07ed146f5778756bb01fa7b2eda2b5e25d239279d545587170683706e9278e76",
+  "variants/structured/shape-goal-prompt/references/evidence.md": "ca5565e41cfdbc265c88603fc10f6d60cc5d4d60274815e3dafc367f958247d1",
+  "variants/structured/shape-goal-prompt/references/examples.md": "fcb682c6b060323d6dc8aeae4b9ae400fe69f2ad3b5a6af5f6a6644aa645f870"
+}

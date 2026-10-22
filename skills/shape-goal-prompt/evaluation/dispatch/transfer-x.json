@@ -1,0 +1,19 @@
+{
+  "stage": "transfer",
+  "condition": "x",
+  "run_directory": "/tmp/goal-prompt-transfer-x",
+  "skill_original": "/workspace/scratch/b17a28db101b/goal-prompt-skill-work/variants/revised/shape-goal-prompt",
+  "skill_hashes": {
+    "SKILL.md": "af91053b1a301bbd8c474f7f417d55490e66c75a1d660057131dc755aa31e623",
+    "agents/openai.yaml": "6f238e799643fa2e959a9b91bc492658881b4cfbf6770426b6c3f641b20d6422",
+    "references/evidence.md": "b249885c7d7be99403eda6234ad6fecaf51a2865bada8a3f748610a2317b2137",
+    "references/examples.md": "77771556dec7d7a84fe729c7e23b32fd75c036f8f94ea7c13677fc2cf3109e76"
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "message": "Use $shape-goal-prompt at /tmp/goal-prompt-transfer-x/shape-goal-prompt to respond to the requests.\nRead /tmp/goal-prompt-transfer-x/turn-1.json. Each case_id is an independent conversation; keep its context separate. Treat the text under user as that user's current message. Produce the actual user-facing reply for each case.\nSave your complete replies as JSON {\"responses\":[{\"case_id\":\"...\",\"reply\":\"...\"}]} in /tmp/goal-prompt-transfer-x/responses-1.json. Preserve the user's requested output form inside reply. The record file is an administrative output, not the user's underlying task.\nRead only the assigned request files, your own previous responses, and the assigned skill directory if present; do not inspect other workspace material. Do not delegate to subagents. Do not execute the tasks described by the users. Do not browse unless the user request to you (as prompt author) specifically requires it. Return a short completion notice after saving.",
+      "response_path": "/tmp/goal-prompt-transfer-x/responses-1.json"
+    }
+  ]
+}

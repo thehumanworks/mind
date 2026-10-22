@@ -1,0 +1,100 @@
+{
+  "development": {
+    "development-grades-1.json": {
+      "s": {
+        "score": 72,
+        "max": 72,
+        "critical": 0
+      },
+      "r": {
+        "score": 72,
+        "max": 72,
+        "critical": 0
+      },
+      "q": {
+        "score": 72,
+        "max": 72,
+        "critical": 0
+      }
+    },
+    "development-grades-2.json": {
+      "s": {
+        "score": 72,
+        "max": 72,
+        "critical": 0
+      },
+      "r": {
+        "score": 72,
+        "max": 72,
+        "critical": 0
+      },
+      "q": {
+        "score": 72,
+        "max": 72,
+        "critical": 0
+      }
+    }
+  },
+  "holdout": {
+    "validation-grades-1.json": {
+      "u": {
+        "score": 71,
+        "max": 72,
+        "critical": 0
+      },
+      "v": {
+        "score": 71,
+        "max": 72,
+        "critical": 0
+      },
+      "t": {
+        "score": 70,
+        "max": 72,
+        "critical": 0
+      }
+    },
+    "validation-grades-2.json": {
+      "u": {
+        "score": 71,
+        "max": 72,
+        "critical": 0
+      },
+      "v": {
+        "score": 71,
+        "max": 72,
+        "critical": 0
+      },
+      "t": {
+        "score": 71,
+        "max": 72,
+        "critical": 0
+      }
+    }
+  },
+  "regression": {
+    "validation-grades-1.json": {
+      "w": {
+        "score": 48,
+        "max": 48,
+        "critical": 0
+      },
+      "x": {
+        "score": 48,
+        "max": 48,
+        "critical": 0
+      }
+    },
+    "validation-grades-2.json": {
+      "w": {
+        "score": 47,
+        "max": 48,
+        "critical": 0
+      },
+      "x": {
+        "score": 48,
+        "max": 48,
+        "critical": 0
+      }
+    }
+  }
+}

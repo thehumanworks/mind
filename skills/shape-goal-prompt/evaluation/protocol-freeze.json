@@ -1,0 +1,17 @@
+{
+  "build_cases.py": "1409c7e39c925c97b41c16151eb70fb6cd81e9dd111f7cf1244cba12c6737dc7",
+  "development/cases-private.json": "5d10703d302660a5631f0631d4824a59edc833b5cab53d7e977e39d7bc388af2",
+  "development/turn-1.json": "0ca92d6aa94f46cd77222b894cf8c0806682e62fade8fbf3ba726a67c9984fd1",
+  "development/turn-2.json": "edec2a39bf44a59e5a8452fd868470363777450d7d313b8b1d65d0a33b093d1a",
+  "development/turn-3.json": "911b6eed55c33108a26fd4f81846b1bd3cb38ac2c6988ecaec01fee6e55f0a17",
+  "holdout/cases-private.json": "77831a8cec63cbe797a565c4309cea58c7f10e94156a75a59b481adf499486e0",
+  "holdout/turn-1.json": "d77f65bc241fbd2b967a668c385772437a3010f974dc8e0d7356693f1bf2cb6d",
+  "holdout/turn-2.json": "88bb077ef777213e004065145ea92bf6f920ae2db874ab2b04c4a1aa8b10d60b",
+  "holdout/turn-3.json": "72342ce21991f3872b57cc0e6e006c0214522b8e7059ab959915e9cbecef6d0f",
+  "protocol.md": "1a5e49fed3f038f06c4741ad2ddd3495f60d79fa5455bfdf18bb8642fbbf8284",
+  "rubric.md": "3f3c365baffd11806cae3b4f2aaf376d4e8e696bfbb361667d6025f98dc3468e",
+  "transfer-cases.json": "b2d6f3e496f7677e5e15ad0ba12ee8cbbcfa00907b6a927b912d695b48a74b44",
+  "transfer/turn-1.json": "491cfda29d036a5babbcffb0afe4f60cf87a78acb9c29ad6e40e0528b9d85a94",
+  "transfer/cases-private.json": "a74f88ee2ccd5a67bfe8838748c325e29f8534e637b9b9d0aaac4d3e276ae5b8",
+  "check_transfer.py": "e948b1ea924c6b002b7dc09b380f5fa158633ca79e2ce423d9ef4e3d9a28bf12"
+}

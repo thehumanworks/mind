@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "case_id": "D2",
+      "condition": "q",
+      "check": "At most 120 words",
+      "word_count": 108,
+      "passed": true
+    },
+    {
+      "case_id": "D2",
+      "condition": "r",
+      "check": "At most 120 words",
+      "word_count": 107,
+      "passed": true
+    },
+    {
+      "case_id": "D2",
+      "condition": "s",
+      "check": "At most 120 words",
+      "word_count": 109,
+      "passed": true
+    },
+    {
+      "case_id": "H5",
+      "condition": "t",
+      "check": "Exactly two sentences; also confirmed by root-agent inspection",
+      "terminal_punctuation_count": 2,
+      "passed": true,
+      "reply": "Translate the supplied English release notes into clear German for a technical audience, preserving every version number, command, and URL exactly as written. Return only the German translation, followed when needed by a separate note in German identifying any ambiguous source phrase and explaining the uncertainty."
+    },
+    {
+      "case_id": "H5",
+      "condition": "u",
+      "check": "Exactly two sentences; also confirmed by root-agent inspection",
+      "terminal_punctuation_count": 2,
+      "passed": true,
+      "reply": "Translate the supplied English release notes into German for a technical audience, preserving every version number, command, and URL exactly. Return only the German translation, followed when necessary by a separate German note flagging any ambiguous source phrases."
+    }
+  ],
+  "note": "The H5 punctuation count is suitable for these simple saved outputs; it is not a general sentence parser. All conditions come from the prewritten user requests."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "D1",
+    "response": "Yes. The button now reads “Receive updates” in the local branch, and the existing UI check passed. The change hasn’t been released yet."
+  },
+  {
+    "id": "D2",
+    "response": "Not yet. PR #31 is ready for review, but the required macOS gate hasn’t run because its runner is unavailable. The repository requires both Linux and macOS checks before merge.\n\n- **Change:** A cancelled request no longer starts another retry attempt.\n- **Verified:** All 112 Linux tests passed, including 8 cancellation regression tests. No production testing or deployment occurred.\n- **Next:** Rerun the macOS gate when the runner is available; it must pass before merge."
+  },
+  {
+    "id": "D3",
+    "response": "Choose **Option A**. At £40/month with a two-day migration, it meets your budget of under £60/month and your five-working-day deadline. It also passed a restore drill. Both options support the required file formats.\n\nOption B saves the subscription fee, but its three-week migration misses your deadline, and it has no restore test."
+  },
+  {
+    "id": "D4",
+    "response": "The customer can repeat a checkout request with the same request ID within 24 hours and receive the original receipt without another charge. The service uses that ID to recognize the repeated checkout and return its existing result.\n\nThe protection depends on reusing the same ID within that window. A different ID or a retry after 24 hours can create a new charge.\n\nA local automated test sent the same ID twice and observed one charge record. We haven’t tested this with a live payment provider."
+  },
+  {
+    "id": "D5",
+    "response": "The export succeeded on retry, but the timeout’s cause is still unknown.\n\nThe 14:05 attempt failed with `connect_timeout`; the same export succeeded at 14:08. We’ve inspected one trace and made no code or infrastructure changes. Database load remains a hypothesis, not a finding.\n\nNext, I’ll compare connection-pool and database-queue metrics during the failed request to investigate the cause. No decision is needed from you yet."
+  },
+  {
+    "id": "D6",
+    "response": "For your local Atlas demo:\n\n1. Stop the worker: `atlas worker stop`.\n2. Preview the rotation: `atlas key rotate --dry-run`.\n3. Confirm the preview says both `scope=local` and `affected=1`. Otherwise, stop and inspect the configuration before proceeding.\n4. Apply the rotation: `atlas key rotate --scope local`.\n5. Verify: `atlas key verify`. Success is exactly `valid`.\n6. Once verification succeeds, restart the worker: `atlas worker start`."
+  }
+]

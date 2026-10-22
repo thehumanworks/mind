@@ -1,0 +1,32 @@
+{
+  "id": "E1",
+  "kind": "runtime",
+  "source": "exact image, test, query, or source artifact",
+  "source_revision_or_time_range": "exact revision or time interval",
+  "observation": "Replace with observed result",
+  "supports": [],
+  "contradicts": [],
+  "run": {
+    "operation_id": "OP-001",
+    "argv_or_query": [
+      "tool",
+      "arguments"
+    ],
+    "cwd": "isolated target checkout",
+    "tool_version": "record actual version",
+    "environment_id": "record actual environment",
+    "started_at": "2026-10-22T00:00:00Z",
+    "finished_at": "2026-10-22T00:00:01Z",
+    "exit_code": 0,
+    "complete": true,
+    "outcome": "observation",
+    "stderr_reviewed": true,
+    "exit_interpretation": "Replace with tool-specific meaning of exit status; distinguish observed target failure from tool/setup failure"
+  },
+  "artifacts": [
+    {
+      "path": "logs/result.txt",
+      "sha256": "replace with 64 hexadecimal SHA-256 characters"
+    }
+  ]
+}

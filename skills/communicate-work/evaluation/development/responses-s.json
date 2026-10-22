@@ -1,0 +1,26 @@
+[
+  {
+    "id": "D1",
+    "response": "Yes—the button now says “Receive updates” in the local branch, and the existing UI check passed. The change hasn’t been released yet."
+  },
+  {
+    "id": "D2",
+    "response": "Not yet. PR #31 is ready for review, but merge is blocked on the required macOS check.\n\n- **Fix:** Cancelling a request now prevents another retry attempt.\n- **Verified:** All 112 Linux tests passed, including 8 cancellation regression tests.\n- **Blocker:** The macOS gate hasn’t run because its runner is unavailable. The repository requires both Linux and macOS checks before merge.\n- **Next:** Rerun the macOS gate when the runner is available. It must pass before you merge.\n\nNo production testing or deployment has occurred."
+  },
+  {
+    "id": "D3",
+    "response": "Choose **Option A**. Its £40/month cost is within your £60/month budget, and its 2-day migration fits your 5-working-day deadline. It also passed a restore drill.\n\nOption B has no subscription fee, but its 3-week migration misses your deadline, and its restore capability hasn’t been tested. Both support the required file formats, so format support doesn’t change the decision."
+  },
+  {
+    "id": "D4",
+    "response": "The customer can retry the same checkout request within 24 hours and receive the original receipt without being charged again, provided the retry uses the same request ID. That ID is the reference that tells the service this is a repeat of the original request.\n\n**The practical limit:** A different request ID or a retry after 24 hours can create a new charge. The protection therefore depends on checkout retries keeping the original ID and staying within that window.\n\nA local automated test sent the same ID twice and produced one charge record. We haven’t yet verified this against a live payment provider."
+  },
+  {
+    "id": "D5",
+    "response": "The export succeeded on retry, but we still don’t know what caused the timeout.\n\n- **14:05:** The export failed with `connect_timeout`.\n- **14:08:** Retrying the same export succeeded.\n- **Investigation:** We’ve inspected one trace. Database load is a hypothesis, not an established cause. No code or infrastructure changes have been made.\n\nThe next step is to compare connection-pool and database-queue metrics during the failed request. No decision is needed from you yet."
+  },
+  {
+    "id": "D6",
+    "response": "1. Stop the local worker: `atlas worker stop`.\n2. Preview the rotation: `atlas key rotate --dry-run`.\n3. Continue only if the preview shows both `scope=local` and `affected=1`. Otherwise, stop here and inspect the configuration.\n4. Apply the rotation: `atlas key rotate --scope local`.\n5. Verify: `atlas key verify`. Success is exactly `valid`.\n6. Once verification succeeds, restart the worker: `atlas worker start`."
+  }
+]

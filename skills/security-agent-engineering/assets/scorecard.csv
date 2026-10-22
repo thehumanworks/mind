@@ -1,0 +1,1 @@
+run_id,task_id,arm,run_status,rescued,accepted_outcomes,findings_presented,accepted_findings,rejected_findings,inconclusive_findings,ground_truth_total,ground_truth_validated,fixes_reviewed,correct_fixes,elapsed_seconds,model_cost,compute_tool_cost,integration_maintenance_cost,human_minutes,human_cost,adverse_events

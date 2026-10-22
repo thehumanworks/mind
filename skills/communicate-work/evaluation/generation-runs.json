@@ -1,0 +1,75 @@
+[
+  {
+    "task_name": "respond_dev_q",
+    "fork_turns": "none",
+    "model_override": null,
+    "skill": "variants/lean/communicate-work/SKILL.md",
+    "requests": "eval/development/requests.json",
+    "output": "eval/development/responses-q.json",
+    "isolation": "Only assigned input paths allowed; expected answers, rubric and other artifacts withheld."
+  },
+  {
+    "task_name": "respond_dev_r",
+    "fork_turns": "none",
+    "model_override": null,
+    "skill": "variants/operational/communicate-work/SKILL.md",
+    "requests": "eval/development/requests.json",
+    "output": "eval/development/responses-r.json",
+    "isolation": "Only assigned input paths allowed; expected answers, rubric and other artifacts withheld."
+  },
+  {
+    "task_name": "respond_dev_s",
+    "fork_turns": "none",
+    "model_override": null,
+    "skill": null,
+    "requests": "eval/development/requests.json",
+    "output": "eval/development/responses-s.json",
+    "isolation": "Only assigned input paths allowed; expected answers, rubric and other artifacts withheld."
+  },
+  {
+    "task_name": "respond_holdout_t",
+    "fork_turns": "none",
+    "model_override": null,
+    "skill": "variants/revised/communicate-work/SKILL.md",
+    "requests": "eval/holdout/requests.json",
+    "output": "eval/holdout/responses-t.json",
+    "isolation": "Only assigned input paths allowed; expected answers, rubric and other artifacts withheld."
+  },
+  {
+    "task_name": "respond_holdout_u",
+    "fork_turns": "none",
+    "model_override": null,
+    "skill": "variants/lean/communicate-work/SKILL.md",
+    "requests": "eval/holdout/requests.json",
+    "output": "eval/holdout/responses-u.json",
+    "isolation": "Only assigned input paths allowed; expected answers, rubric and other artifacts withheld.",
+    "prompt_note": "A mistyped requests path was immediately corrected within the same prompt; the corrected path was explicitly designated authoritative."
+  },
+  {
+    "task_name": "respond_holdout_v",
+    "fork_turns": "none",
+    "model_override": null,
+    "skill": null,
+    "requests": "eval/holdout/requests.json",
+    "output": "eval/holdout/responses-v.json",
+    "isolation": "Only assigned input paths allowed; expected answers, rubric and other artifacts withheld."
+  },
+  {
+    "task_name": "respond_regression_w",
+    "fork_turns": "none",
+    "model_override": null,
+    "skill": "variants/revised/communicate-work/SKILL.md",
+    "requests": "eval/regression/requests.json",
+    "output": "eval/regression/responses-w.json",
+    "isolation": "Only assigned input paths allowed; expected answers, rubric and other artifacts withheld."
+  },
+  {
+    "task_name": "respond_regression_x",
+    "fork_turns": "none",
+    "model_override": null,
+    "skill": "variants/lean/communicate-work/SKILL.md",
+    "requests": "eval/regression/requests.json",
+    "output": "eval/regression/responses-x.json",
+    "isolation": "Only assigned input paths allowed; expected answers, rubric and other artifacts withheld."
+  }
+]

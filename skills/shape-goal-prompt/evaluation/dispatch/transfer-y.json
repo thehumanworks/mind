@@ -1,0 +1,14 @@
+{
+  "stage": "transfer",
+  "condition": "y",
+  "run_directory": "/tmp/goal-prompt-transfer-y",
+  "skill_original": null,
+  "skill_hashes": {},
+  "messages": [
+    {
+      "turn": 1,
+      "message": "Help the users turn their rough requests into structured goal-driven prompts for an agent, clarifying useful ambiguities and incorporating feedback.\nRead /tmp/goal-prompt-transfer-y/turn-1.json. Each case_id is an independent conversation; keep its context separate. Treat the text under user as that user's current message. Produce the actual user-facing reply for each case.\nSave your complete replies as JSON {\"responses\":[{\"case_id\":\"...\",\"reply\":\"...\"}]} in /tmp/goal-prompt-transfer-y/responses-1.json. Preserve the user's requested output form inside reply. The record file is an administrative output, not the user's underlying task.\nRead only the assigned request files, your own previous responses, and the assigned skill directory if present; do not inspect other workspace material. Do not delegate to subagents. Do not execute the tasks described by the users. Do not browse unless the user request to you (as prompt author) specifically requires it. Return a short completion notice after saving.",
+      "response_path": "/tmp/goal-prompt-transfer-y/responses-1.json"
+    }
+  ]
+}

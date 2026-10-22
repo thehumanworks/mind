@@ -1,0 +1,33 @@
+[
+  {
+    "id": "H1",
+    "request": "Reply in one sentence: is the import ready to ship?",
+    "facts": "The import mapping is implemented and its local tests passed. One required staging run is still pending. Shipping requires the staging run to pass. No deployment has occurred."
+  },
+  {
+    "id": "H2",
+    "request": "I am reviewing the design as the backend engineer. Explain exactly how duplicate jobs are prevented, including races and the boundary.",
+    "facts": "The proposed design stores `(tenant_id, request_key)` under a database uniqueness constraint. Two simultaneous inserts with the same pair race; exactly one insert succeeds, and the loser reads the already-created job. A retry uses that same stored job. Different tenants can reuse a key. Keys are retained 7 days; after deletion the same pair can create another job. This is a design proposal, not an implemented or tested system. No delivery or exactly-once execution guarantee is implied by this job-creation rule."
+  },
+  {
+    "id": "H3",
+    "request": "Summarise the benchmark result. Should we enable the new index everywhere?",
+    "facts": "A staging test of the new index used 1 million rows and one tenant. Read p95 fell from 800 ms to 260 ms. Write p95 rose from 20 ms to 31 ms. Storage grew from 2 GB to 3.2 GB. The other 47 tenants have not been tested. Production traffic and concurrent writes were not represented. The goal is better reads without unacceptable write delays. No maximum acceptable write latency has been agreed. No rollout happened. Recommending further validation or a staged trial is allowed; don't invent its results."
+  },
+  {
+    "id": "H4",
+    "request": "Make a short customer-facing update about the attachment failure, with no technical jargon.",
+    "facts": "Some attachments sent from 09:10 to 09:24 UTC were not delivered. Delivery was restored at 09:24 UTC. The missing attachments have not been resent. Customers whose attachments failed need to resend them. Message text was delivered normally. The number of affected customers is not yet known. Do not claim that all messages failed or that all attachments have been recovered."
+  },
+  {
+    "id": "H5",
+    "request": "I am new to this internal tool. Show me a tiny example that teaches me how a dry run differs from applying a change.",
+    "facts": "Fictional tool: `roster rename --user sam --name Samira --dry-run` prints `Would rename sam to Samira` and makes no change. `roster rename --user sam --name Samira` changes the display name and prints `Renamed sam to Samira`. `roster show --user sam` then prints `Samira`. The exercise uses a disposable demo account. Do not run commands; present a guided example with the expected results, explaining what the learner should observe."
+  },
+  {
+    "id": "H6",
+    "request": "Can we finish the website refresh by Friday? Tell me what decision you need from me.",
+    "facts": "It is Wednesday. The requested scope includes new page layouts and an analytics dashboard. The layouts can be ready by Friday with the existing analytics links. Building the new dashboard needs 3 additional working days. Engineering recommends shipping the layouts Friday and scheduling the dashboard for the following Wednesday. The user can instead keep the full scope and move the release to Wednesday. No plan has been approved. Ask the user to choose between these two concrete scope/date options; don't invent a precise approval deadline."
+  }
+]
+

@@ -1,0 +1,49 @@
+schema_version: 1
+run_id: null
+task_id: null
+arm: null
+started_at_utc: null
+objective: null
+accepted_outcome_definition: null
+scope:
+  approved_assets: []
+  environments: []
+  authority_source: null
+  policy_revision: null
+  excluded_actions: []
+inputs:
+  repository_revision: null
+  dirty_diff_digest: null
+  deployment_image_digest: null
+  configuration_digest: null
+  dependency_lock_digest: null
+  telemetry_sources_and_windows: []
+  threat_context_revision: null
+runtime:
+  provider: null
+  requested_model: null
+  resolved_model: null
+  access_programme: null
+  product_surface: null
+  project_or_workspace_id: null
+  client_and_harness_version: null
+  tool_and_rule_versions: []
+  effective_sandbox_and_network_policy: null
+  credential_scope_reference: null
+  # Record identifiers, never token values or private keys.
+budget:
+  elapsed_seconds: null
+  total_cost_limit: null
+  currency: null
+  model_tokens: null
+  tool_calls: null
+  human_minutes: null
+state:
+  operation_ids: []
+  evidence_refs: []
+  unresolved_questions: []
+  invalidation_conditions: []
+  checkpoint: null
+  final_disposition: null
+  adjudicator: null
+  completion_time_utc: null

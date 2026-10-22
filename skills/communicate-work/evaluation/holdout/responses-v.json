@@ -1,0 +1,26 @@
+[
+  {
+    "id": "H1",
+    "response": "Not yet: the import mapping is implemented and local tests passed, but the required staging run is still pending and must pass before shipping."
+  },
+  {
+    "id": "H2",
+    "response": "The proposed design prevents duplicate job creation with a database uniqueness constraint on `(tenant_id, request_key)`. While that key is retained, only one job can be created for that tenant/key pair.\n\nHere is how the race and retries work:\n\n1. Two simultaneous requests attempt to insert jobs with the same pair.\n2. The database uniqueness constraint allows exactly one insert to succeed.\n3. The losing request reads the job created by the winner and uses that job.\n4. A retry with the same pair also uses the stored job.\n\nThe database constraint is what prevents both racing inserts from succeeding.\n\nThe boundaries are:\n\n- **Tenant:** Different tenants can reuse the same request key because uniqueness applies to the pair, not the key alone.\n- **Time:** Keys are retained for seven days. After a key is deleted, the same tenant/key pair can create another job.\n- **Guarantee:** This rule prevents duplicate job creation within those boundaries. It provides no delivery guarantee and does not guarantee exactly-once execution of the job.\n\nThis is a design proposal; it has not been implemented or tested."
+  },
+  {
+    "id": "H3",
+    "response": "I would not enable the index everywhere yet. The staging benchmark shows a substantial read improvement, but writes became slower and storage increased.\n\nThe test used **1 million rows and one tenant**:\n\n| Metric | Before | With the new index | Change |\n|---|---:|---:|---:|\n| Read p95 | 800 ms | 260 ms | 67.5% lower |\n| Write p95 | 20 ms | 31 ms | 55% higher |\n| Storage | 2 GB | 3.2 GB | 60% higher |\n\nThe other 47 tenants have not been tested, and the benchmark did not represent production traffic or concurrent writes. We also have no agreed maximum acceptable write latency, so we cannot yet say whether the write penalty is acceptable for the goal.\n\nI recommend agreeing that write-latency limit, then validating representative tenants under load that includes production traffic patterns and concurrent writes. If those results meet the agreed criteria, a limited trial would be a reasonable next step before wider rollout. No rollout has occurred."
+  },
+  {
+    "id": "H4",
+    "response": "Some attachments sent between 09:10 and 09:24 UTC were not delivered. Attachment delivery was restored at 09:24 UTC. Missing attachments have not been resent, so please resend any attachments that failed. Message text was delivered normally. We’re sorry for the disruption."
+  },
+  {
+    "id": "H5",
+    "response": "A dry run previews a change without saving it. Here is a tiny example using the disposable demo account, with the expected results.\n\n1. **Preview the rename:**\n\n   ```sh\n   roster rename --user sam --name Samira --dry-run\n   ```\n\n   Expected output: `Would rename sam to Samira`. The display name stays unchanged.\n\n2. **Apply the rename:**\n\n   ```sh\n   roster rename --user sam --name Samira\n   ```\n\n   Expected output: `Renamed sam to Samira`. Removing `--dry-run` makes this command change the display name.\n\n3. **Check the saved name:**\n\n   ```sh\n   roster show --user sam\n   ```\n\n   Expected output: `Samira`, confirming that the applied change was saved."
+  },
+  {
+    "id": "H6",
+    "response": "We can have the new page layouts ready by Friday with the existing analytics links. The new analytics dashboard needs three additional working days.\n\nI need you to choose between these two plans:\n\n1. **Release the layouts Friday, then the dashboard the following Wednesday.** Friday’s release uses the existing analytics links. This is engineering’s recommendation.\n2. **Release everything the following Wednesday.** Keep the full scope together and move the website refresh from Friday to Wednesday.\n\nNeither plan has been approved yet. Which option should we use?"
+  }
+]

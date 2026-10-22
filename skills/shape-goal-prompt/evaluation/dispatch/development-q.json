@@ -1,0 +1,28 @@
+{
+  "stage": "development",
+  "condition": "q",
+  "run_directory": "/tmp/goal-prompt-development-q",
+  "skill_original": "/workspace/scratch/b17a28db101b/goal-prompt-skill-work/variants/compact/shape-goal-prompt",
+  "skill_hashes": {
+    "SKILL.md": "25d1bfaae24e81a5fb833ed0f189dacbbe231c16caff47826b13e6219c57020e",
+    "references/sources.md": "d6de556a45238bd47d02e9a46ee85350e5511e5e2e0cdd271f11a00eefa3bd1f",
+    "references/template-and-examples.md": "ea9142594ded8693f10d9819a7cb36bc7fd87014505824a129c038b64a23beef"
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "message": "Use $shape-goal-prompt at /tmp/goal-prompt-development-q/shape-goal-prompt to respond to the requests.\nRead /tmp/goal-prompt-development-q/turn-1.json. Each case_id is an independent conversation; keep its context separate. Treat the text under user as that user's current message. Produce the actual user-facing reply for each case.\nSave your complete replies as JSON {\"responses\":[{\"case_id\":\"...\",\"reply\":\"...\"}]} in /tmp/goal-prompt-development-q/responses-1.json. Preserve the user's requested output form inside reply. The record file is an administrative output, not the user's underlying task.\nRead only the assigned request files, your own previous responses, and the assigned skill directory if present; do not inspect other workspace material. Do not execute the tasks described by the users. Do not browse unless the user request to you (as prompt author) specifically requires it. Return a short completion notice after saving.",
+      "response_path": "/tmp/goal-prompt-development-q/responses-1.json"
+    },
+    {
+      "turn": 2,
+      "message": "Continue the separate conversations from your earlier replies, using the user follow-ups supplied here.\nRead /tmp/goal-prompt-development-q/turn-2.json. Each case_id is an independent conversation; keep its context separate. Treat the text under user as that user's current message. Produce the actual user-facing reply for each case.\nSave your complete replies as JSON {\"responses\":[{\"case_id\":\"...\",\"reply\":\"...\"}]} in /tmp/goal-prompt-development-q/responses-2.json. Preserve the user's requested output form inside reply. The record file is an administrative output, not the user's underlying task.\nRead only the assigned request files, your own previous responses, and the assigned skill directory if present; do not inspect other workspace material. Do not execute the tasks described by the users. Do not browse unless the user request to you (as prompt author) specifically requires it. Return a short completion notice after saving.",
+      "response_path": "/tmp/goal-prompt-development-q/responses-2.json"
+    },
+    {
+      "turn": 3,
+      "message": "Continue the separate conversations from your earlier replies, using the user follow-ups supplied here.\nRead /tmp/goal-prompt-development-q/turn-3.json. Each case_id is an independent conversation; keep its context separate. Treat the text under user as that user's current message. Produce the actual user-facing reply for each case.\nSave your complete replies as JSON {\"responses\":[{\"case_id\":\"...\",\"reply\":\"...\"}]} in /tmp/goal-prompt-development-q/responses-3.json. Preserve the user's requested output form inside reply. The record file is an administrative output, not the user's underlying task.\nRead only the assigned request files, your own previous responses, and the assigned skill directory if present; do not inspect other workspace material. Do not execute the tasks described by the users. Do not browse unless the user request to you (as prompt author) specifically requires it. Return a short completion notice after saving.",
+      "response_path": "/tmp/goal-prompt-development-q/responses-3.json"
+    }
+  ]
+}

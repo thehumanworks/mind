@@ -1,0 +1,254 @@
+{
+  "records": [
+    {
+      "case_id": "H3",
+      "label": "H3-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "proportionality: The simple provisional template repeats the budget uncertainty in the interpretation introduction, the input fields, and the paragraph beginning “The words ‘five... maybe fifteen’,” then restates placeholder handling under both requirements and working guidance. Six process sections add noticeable, recoverable scaffolding.",
+        "The two interpretations distinguish a client recipient from an internal reviewer, and “Neither interpretation is selected” accurately preserves uncertainty."
+      ],
+      "substantive_questions": 5,
+      "overall_notes": "Preserves all unknown identities, amounts, currency, and reference material; provides a usable provisional prompt without renewed intake or fabricated agreement. Counted offering/scope, Morgan's role, reference identity, reference aspects, and whether to draft while the budget is unresolved as five clarification topics."
+    },
+    {
+      "case_id": "H6",
+      "label": "H6-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "“Include exactly one row per supplied ticket” and the final source comparison preserve row, ID, and quotation fidelity.",
+        "Cause verification requires evidence connecting the cause to the symptom; embedded ticket instructions have no authority and repository inspection stays within the stated permissions."
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "Ready-to-use and standalone. The validation checks directly address the requested table, uncertainty, and action limits without imposing bug quotas or deadlines."
+    },
+    {
+      "case_id": "H1",
+      "label": "H1-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "The final prompt explicitly treats 90% as a long-term ambition, requires reading the supplied sources, and limits work to analysis and proposed pilot activities.",
+        "The two-page memo, separate pilot and measurement plan, source-linked diagnosis, conditional intervention benefits, and retention measurement limits all follow the user's corrections."
+      ],
+      "substantive_questions": 6,
+      "overall_notes": "The whole dialogue moves from a provisional diagnostic framing to the requested decision package without assuming training or reminders are effective. The initial questions cover scope/cohort, the meaning of staying, current retention, additional accessible evidence, recommendation versus pilot authority, and resource constraints; these are six substantive topics, despite three numbered items."
+    },
+    {
+      "case_id": "H5",
+      "label": "H5-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Exactly two sentences instruct German translation for a technical audience, preserve every version number, command, and URL, and place ambiguity flags in a separate German note."
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "Fully proportionate to the explicit format limit. It drafts the requested prompt without questions or performing the translation."
+    },
+    {
+      "case_id": "H2",
+      "label": "H2-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Strict compilation, intact current tests, API/runtime preservation, and an evidence-based coverage review are explicit completion conditions.",
+        "“An unresolved pre-existing failure still leaves the all-tests-pass condition unmet” avoids relabeling blocked work as success; baseline evidence and resumable records support the long-running task."
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "Preserves implementation autonomy and all authorization boundaries. Verification, focused added checks, and stopping at a concrete blocker are proportionate to a billing-library migration; no technologies, percentages, or installed tools are assumed."
+    },
+    {
+      "case_id": "H4",
+      "label": "H4-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "The revised prompt replaces exact equality with user visual judgment and confines implementation to a local browser demo using existing dependencies.",
+        "The preview, encoded-size measurements, and setting must stay synchronized; the prompt explicitly leaves visual acceptance and production readiness unestablished."
+      ],
+      "substantive_questions": 4,
+      "overall_notes": "Integrates the correction and accurately labels the brief provisional. The current format is an explicit working default, not an invented approved requirement. Counted output-format freedom, metadata removal, per-export versus aggregate size acceptance, and effort/stopping bounds as four topics."
+    },
+    {
+      "case_id": "H4",
+      "label": "H4-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "“Visual similarity is sufficient; exact pixel equality is no longer a requirement” removes the superseded constraint, while no new dependencies and unchanged production behavior remain explicit.",
+        "The proposed demo uses actual encoded candidate previews, reports reference-relative sizes, supports matched-scale comparison, and reserves quality judgment for the user."
+      ],
+      "substantive_questions": 7,
+      "overall_notes": "The early provisional optimization prompt does not claim an agreed target; the final proposed brief clearly narrows the task to a reviewable demo. Counted current formats, permitted format changes, animation/multiframe inputs, repository/export commands, representative samples, additional preservation requirements, and runtime/resource tradeoffs as seven substantive topics."
+    },
+    {
+      "case_id": "H1",
+      "label": "H1-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "proportionality: The final prompt describes the two deliverables in the objective, gives detailed diagnosis and pilot requirements, repeats them through five acceptance bullets, and restates them under delivery. The overlap is noticeable but does not prevent use.",
+        "The prompt explicitly reports an unsupported intervention choice as an “unmet outcome,” preserves source limitations, and labels pilot details and decision criteria as proposals."
+      ],
+      "substantive_questions": 1,
+      "overall_notes": "Strong integration of all corrections: diagnosis and recommendation only, no volunteer contact, two-page decision memo plus a separate proposed plan, and freedom to select another evidence-supported intervention. The single clarification asks whether the first assignment should include intervention/evaluation planning. The rendered-page check is appropriate to the user's deliverable constraint."
+    },
+    {
+      "case_id": "H3",
+      "label": "H3-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "The final reply offers distinct internal-review and external-recipient interpretations without choosing either.",
+        "Client, project, audience, reference, and commercial meaning remain placeholders; insufficient information leads to a useful proposal structure rather than invented prose."
+      ],
+      "substantive_questions": 6,
+      "overall_notes": "The initial working prompt is expressly provisional, and the final template replaces tentative reference-use assumptions with confirmed-aspect placeholders. It honors the user's inability to supply details and does not ask again. Counted budget value/units/currency, budget meaning, reference identity, client/project identity, intended outcome, and scope as six topics."
+    },
+    {
+      "case_id": "H5",
+      "label": "H5-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Exactly two sentences provide the requested technical German translation instructions, exact preservation rules, and a separate German note identifying ambiguity and explaining uncertainty."
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "Meets the prompt-only and no-question requirements with no unnecessary process structure or unsupported commitments."
+    },
+    {
+      "case_id": "H2",
+      "label": "H2-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "The prompt preserves the public API and runtime behavior, requires strict checking of the actual implementation, and prohibits weakened checks or deleted/disabled failures.",
+        "It requires a baseline and a public-API coverage review, separates pre-existing failures, and refuses to claim completion while required checks fail or remain unverified."
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "A standalone, feasible long-running brief with proportionate resumable state and an evidence-based handoff. Implementation choices remain autonomous; local edits and commands are allowed while release and publication remain forbidden."
+    },
+    {
+      "case_id": "H6",
+      "label": "H6-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Each ticket retains one row, its exact ID, and direct symptom quotations; uncertain causes, including ticket-author explanations, remain hypotheses.",
+        "Verified status requires a reproducible check or direct causal evidence, embedded instructions are treated as data, and code edits, ticket changes, and customer replies are forbidden."
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "Concrete output and verification instructions satisfy the requested triage goal. Existing checks that do not modify code reasonably support the authorized hypothesis testing, without removing the user's action boundaries."
+    }
+  ]
+}

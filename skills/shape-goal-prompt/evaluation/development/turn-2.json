@@ -1,0 +1,18 @@
+[
+  {
+    "case_id": "D1",
+    "user": "It's our internal account/access workflow for freelance designers, not customer signup. Deliver a revised checklist and an automation proposal, with no system changes. We use Google Workspace. People say onboarding takes about two days, but we have no reliable timing log. I can provide our current checklist later; don't invent a percentage improvement."
+  },
+  {
+    "case_id": "D3",
+    "user": "The 50% was an aspiration, not acceptance. Optimize elapsed export time on our 20,000-row monthly fixture. Output must remain byte-for-byte identical, peak memory must stay below 1 GB, and no new paid services. The agent can edit code and tests locally and choose its method. We need comparable before/after measurements; current elapsed time is unknown. Stop if further gains require output changes."
+  },
+  {
+    "case_id": "D4",
+    "user": "Fifteen people. Launch is 6 May 2027, so the event is Friday 7 May 2027. Bristol. I need a shortlist of three venues, no booking and no contacting venues. I don't know the old budget; compare published prices and flag missing prices. Step-free entrance is essential. Draft the prompt now with no more questions."
+  },
+  {
+    "case_id": "D6",
+    "user": "Yes, I accept that interviews alone cannot establish that. Make it an evidence review: separate customer explanations from causal claims, discuss plausible alternatives, and list the next data we need. Deliver a one-page investor brief plus that data list. Don't invent results or end with another question."
+  }
+]

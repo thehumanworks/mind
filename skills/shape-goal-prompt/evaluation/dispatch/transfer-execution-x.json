@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "x",
+    "case_id": "T1",
+    "run_directory": "/tmp/goal-transfer-execution-x-T1",
+    "message": "Execute the assignment in /tmp/goal-transfer-execution-x-T1/prompt.md using only the input files in /tmp/goal-transfer-execution-x-T1. The assignment is authorized for this local task. You have been given all available task context; do not inspect other workspace material or browse, and do not delegate to subagents.\nWrite the complete requested output, without commentary or Markdown fences, to /tmp/goal-transfer-execution-x-T1/result.csv. This output file is an administrative destination for the requested artifact. Do not modify the source inputs. Return a short completion notice after saving.",
+    "output_file": "/tmp/goal-transfer-execution-x-T1/result.csv",
+    "input_hashes": {
+      "prompt.md": "4617bea3334ce9aba85fc29262c616d62be156855d3110bc6aa20cc9f51d0592",
+      "invoices.csv": "a03bad34f5cb15201c3de14101399a657f9c43994f0489b17d52868e72286819"
+    }
+  },
+  {
+    "condition": "x",
+    "case_id": "T2",
+    "run_directory": "/tmp/goal-transfer-execution-x-T2",
+    "message": "Execute the assignment in /tmp/goal-transfer-execution-x-T2/prompt.md using only the input files in /tmp/goal-transfer-execution-x-T2. The assignment is authorized for this local task. You have been given all available task context; do not inspect other workspace material or browse, and do not delegate to subagents.\nWrite the complete requested output, without commentary or Markdown fences, to /tmp/goal-transfer-execution-x-T2/result.json. This output file is an administrative destination for the requested artifact. Do not modify the source inputs. Return a short completion notice after saving.",
+    "output_file": "/tmp/goal-transfer-execution-x-T2/result.json",
+    "input_hashes": {
+      "decisions.md": "1445f35960f2890da101e8f55123d016a5b1b5e978087ecc3c0a75dae4a725c3",
+      "prompt.md": "3cb58de4b0c2bd5bc4e62fcbf1eb9e0a1723a941f06395f89f1dc3985fa20634"
+    }
+  }
+]

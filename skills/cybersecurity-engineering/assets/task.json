@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "task_id": "SEC-001",
+  "objective": "Replace with the security question",
+  "scope": {
+    "systems": [],
+    "repositories": [],
+    "environments": [],
+    "authorisation_source": "existing task or engagement policy",
+    "prohibited_actions": []
+  },
+  "intent": {
+    "asset_owner": null,
+    "security_invariants": [],
+    "sensitive_assets": []
+  },
+  "inputs": {
+    "source_revision": null,
+    "deployment_revision": null,
+    "lockfile_or_sbom_hash": null,
+    "build_instructions": null,
+    "telemetry_sources": []
+  },
+  "permissions": {
+    "source_read": "per existing authorisation",
+    "execute": "approved isolated environment",
+    "network": "per existing allowlist",
+    "repository_write": "per task scope",
+    "production_change": "requires applicable authority"
+  },
+  "completion": {
+    "deliverable": null,
+    "required_proof_level": null,
+    "coverage": [],
+    "terminal_states": [
+      "validated",
+      "disproved",
+      "inconclusive"
+    ]
+  },
+  "budget": {
+    "elapsed_minutes": null,
+    "model_cost_limit": null,
+    "tool_calls": null,
+    "compute_limit": null,
+    "review_minutes": null,
+    "stop_conditions": []
+  },
+  "runtime": {
+    "model_id": null,
+    "access_program": null,
+    "product_surface": null,
+    "tool_versions": {},
+    "environment_id": null
+  }
+}

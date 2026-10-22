@@ -1,0 +1,238 @@
+{
+  "records": [
+    {
+      "case_id": "H5",
+      "label": "H5-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "Exactly two sentences and prompt only. Preserves the technical German audience and exact version numbers, commands, and URLs; reconciles translation-only output with the requested separate ambiguity note. No unnecessary questions or scaffolding."
+    },
+    {
+      "case_id": "H3",
+      "label": "H3-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        {
+          "dimension": "proportionality",
+          "quoted_span": "The intended client, proposal scope, budget, currency, and reference project remain unconfirmed.",
+          "deduction": "This uncertainty is restated in the nine-field checklist, the budget/reference explanation, Requirements, Acceptance, and Working guidance. The six-section scaffold adds noticeable but tolerable repetition to a provisional fill-in prompt."
+        }
+      ],
+      "substantive_questions": 5,
+      "overall_notes": "The initial questions distinguish the offer, Morgan's role, reference identity, aspects to reuse, and whether to draft or wait. After the correction, it supplies two materially different interpretations and leaves all protected facts unchosen. Later placeholders are completion fields, not renewed intake. The provisional status, missing-reference boundary, source checks, and fallback structure are clear."
+    },
+    {
+      "case_id": "H6",
+      "label": "H6-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        {
+          "dimension": "proportionality",
+          "quoted_span": "Check the completed table against the supplied ticket set: every ticket has one corresponding row",
+          "deduction": "One-row coverage is already stated in the objective and requirements and recurs again in Working guidance; hypothesis status is similarly repeated across several sections. The six-section template adds noticeable, recoverable review overhead to the otherwise clear table task."
+        }
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "Preserves ticket identity, exact quotations, and one row per ticket rather than a bug quota. Verification is evidence-based, unverified causes remain hypotheses, and missing or conflicting information is handled honestly. Repository inspection is permitted without additional approval; code edits, ticket closure, customer replies, and embedded ticket instructions remain outside authority."
+    },
+    {
+      "case_id": "H5",
+      "label": "H5-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "Exactly two sentences, with no prefatory material or questions. Contains the full translation objective, technical audience, literal preservation constraints, and a separate German ambiguity note when needed. The concise output is proportionate and executable."
+    },
+    {
+      "case_id": "H2",
+      "label": "H2-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "Provides the requested prompt immediately and leaves migration methods open. Strict compilation, current tests, API and behavior preservation, and coverage review have concrete evidence requirements. It preserves an original reference, distinguishes baseline failures without labeling unmet checks complete, prevents check weakening, retains local-only authority, and includes proportionate resumable state for long work."
+    },
+    {
+      "case_id": "H1",
+      "label": "H1-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        {
+          "dimension": "proportionality",
+          "quoted_span": "# Acceptance and evidence",
+          "deduction": "The final prompt repeats the source-traceability, intervention-choice, pilot-design, measurement, and delivery requirements under Acceptance, then restates several under Working guidance and Delivery. The detail is relevant, but the repeated structure makes the brief longer to review than necessary."
+        }
+      ],
+      "substantive_questions": 1,
+      "overall_notes": "The single clarification resolves whether the first assignment includes intervention planning. Subsequent drafts accurately incorporate diagnosis-only authority, no volunteer contact, the unknown baseline, and 90% as an ambition. The final version incorporates the two-page memo and separate proposed plan, permits alternative interventions, acknowledges unread sources, and keeps pilot parameters explicitly provisional. Insufficient evidence is reported as an unmet outcome rather than disguised as a successful recommendation."
+    },
+    {
+      "case_id": "H1",
+      "label": "H1-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 6,
+      "overall_notes": "Initial clarification covers volunteer population, retention definition, current rate, accessible additional evidence, planning versus implementation, and resource constraints. These are relevant topics, and the working draft remains provisional. Later corrections are retained: no contact or implementation, unknown baseline, 90% as aspiration, supplied sources not yet read, evidence-led intervention choice, and the requested memo plus proposed pilot and measurement plan. Proposed timings and design choices are not presented as existing commitments."
+    },
+    {
+      "case_id": "H3",
+      "label": "H3-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 6,
+      "overall_notes": "Initial clarification requests budget specification, budget meaning, reference identity, client/project identity, intended outcome, and scope. After the user cannot supply them, it stops intake and offers distinct internal-review and external-reader interpretations. The final standalone prompt preserves placeholders and uncertainty, prevents transfer of unsupported reference facts, and provides a useful structure when substantive prose is not yet possible. Completion fields are not counted as new questions."
+    },
+    {
+      "case_id": "H6",
+      "label": "H6-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "A usable table contract with one row per ticket, verbatim IDs and symptoms, hypothesis labels, and evidence-backed verification. It handles missing information and possible duplicates without inventing facts. Existing non-code-modifying checks reasonably implement the authorized hypothesis testing; prohibited actions remain prohibited. Ticket instructions are explicitly treated as data, and no quota or deadline is introduced."
+    },
+    {
+      "case_id": "H2",
+      "label": "H2-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "Immediately supplies an autonomous migration assignment with all core preservation, strict-checking, testing, coverage-review, and no-release constraints. Baseline recording and explicit completion criteria prevent pre-existing failures from being mistaken for a passing suite. It allows sensible test adaptation without weakening assertions, leaves implementation choices open, and includes a brief continuation record and evidence-based final handoff."
+    },
+    {
+      "case_id": "H4",
+      "label": "H4-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 4,
+      "overall_notes": "Initial clarification concerns format changes, metadata removal, per-file versus aggregate size tradeoffs, and an effort/stopping bound. After the correction, exact pixel equality and production optimization are removed. The provisional browser demo uses real candidate exports and sizes, synchronized controls, side-by-side inspection, and the user's visual judgment. Local/existing-tool/no-dependency boundaries remain; a current-format default is explicitly provisional rather than an invented agreement."
+    },
+    {
+      "case_id": "H4",
+      "label": "H4-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 7,
+      "overall_notes": "Initial clarification covers current formats, permission to change format, animation/multiframe content, repository/export access, representative inputs, additional preservation requirements, and performance tradeoffs. The initial prompt is explicitly provisional. The final draft correctly narrows to a local comparison demo, removes obsolete exact-pixel requirements, retains no new dependencies and unchanged production behavior, and uses actual exports and sizes without inventing an acceptable-quality threshold or agreement."
+    }
+  ]
+}

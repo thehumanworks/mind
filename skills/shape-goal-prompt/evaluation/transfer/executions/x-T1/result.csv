@@ -1,0 +1,6 @@
+row_id,invoice_id,delta_pence,flags
+r1,I-100,0,
+r2,I-101,2000,duplicate_invoice
+r3,I-101,2000,duplicate_invoice
+r4,I-102,-500,
+r5,I-103,,missing_paid

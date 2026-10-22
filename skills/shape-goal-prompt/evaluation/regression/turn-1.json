@@ -1,0 +1,14 @@
+[
+  {
+    "case_id": "R1",
+    "user": "Turn this into a prompt for an agent. We need onboarding sorted before the next intake. New starters keep getting stuck. It might be the welcome information or the actual signup flow; I haven't separated them. I want it to just work."
+  },
+  {
+    "case_id": "R3",
+    "user": "Help me write an agent prompt to speed up our report generator. Make it 50% faster and cheaper. It can take a couple of days. Don't do the work yet."
+  },
+  {
+    "case_id": "R6",
+    "user": "Make a prompt for a research agent to prove our new trial caused higher retention using last month's customer interviews. I need a compelling investor brief. We only have the interviews."
+  }
+]

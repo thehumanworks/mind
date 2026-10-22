@@ -1,0 +1,26 @@
+[
+  {
+    "id": "D1",
+    "response": "Fixed in the local branch, but not released yet. The settings button now reads **“Receive updates”**, and the existing UI check passed."
+  },
+  {
+    "id": "D2",
+    "response": "PR #31 is ready for review, but **don’t merge yet**: the required macOS gate hasn’t run because its runner is unavailable.\n\n- **Change:** A cancelled request no longer starts another retry attempt.\n- **Evidence:** All 112 Linux tests passed, including 8 cancellation regression tests. No production test or deployment occurred.\n- **Next step:** Rerun the macOS gate when the runner is available. Both Linux and macOS checks must pass before merge."
+  },
+  {
+    "id": "D3",
+    "response": "Choose **Option A**: it costs **£40/month**, takes **2 days to migrate**, and has passed a restore drill. It meets both your **5-working-day deadline** and **under-£60/month budget**.\n\nOption B saves the subscription fee, but its 3-week migration misses the deadline and it has no restore test. Both support the required file formats."
+  },
+  {
+    "id": "D4",
+    "response": "Customers can retry the same checkout without an extra charge **if the retry uses the same request ID within 24 hours**. They receive the original receipt.\n\nThe request ID lets the service recognize a repeat. For example, if a checkout response is lost, repeating the request with the same ID within that window recovers the receipt without creating another charge. **A different ID or a retry after 24 hours can create a new charge.**\n\nA local automated test sent the same ID twice and observed one charge record. No live payment-provider test has been performed."
+  },
+  {
+    "id": "D5",
+    "response": "The export succeeded on retry, but the timeout’s cause is still unknown. The 14:05 attempt failed with `connect_timeout`; the same export succeeded at 14:08.\n\nI’ve inspected one trace. Database load is only a hypothesis, and no code or infrastructure changes have been made.\n\nNext, I’ll compare connection-pool and database-queue metrics during the failed request to investigate the cause. No decision is needed from you yet."
+  },
+  {
+    "id": "D6",
+    "response": "For your local Atlas demo:\n\n1. Stop the worker: `atlas worker stop`.\n2. Preview the rotation: `atlas key rotate --dry-run`. Proceed only if the preview says `scope=local` **and** `affected=1`; otherwise, stop and inspect the configuration.\n3. Rotate the key: `atlas key rotate --scope local`.\n4. Verify: `atlas key verify`. The success output must be exactly `valid`.\n5. After successful verification, restart the worker: `atlas worker start`."
+  }
+]

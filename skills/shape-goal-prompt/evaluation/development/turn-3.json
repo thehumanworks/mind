@@ -1,0 +1,10 @@
+[
+  {
+    "case_id": "D1",
+    "user": "Yes, that is the context. One correction to the scope: no automation proposal for now. Only the revised checklist and a short list of gaps for me to resolve. That is agreed; give me the final prompt."
+  },
+  {
+    "case_id": "D3",
+    "user": "Agreed. Ask it to deliver a verified speedup if achievable within those constraints. If it cannot, an evidence-backed blocked report is acceptable, but don't call that a successful speedup. No need to ask me to confirm again."
+  }
+]

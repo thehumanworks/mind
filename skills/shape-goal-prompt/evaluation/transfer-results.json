@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "condition": "x",
+      "case_id": "T1",
+      "output_file": "transfer/executions/x-T1/result.csv",
+      "checked": true,
+      "checks": {
+        "csv_parses": true,
+        "header": true,
+        "row_count": true,
+        "rows_and_order_exact": true
+      },
+      "source_inputs_unchanged": true,
+      "root_agent_semantic_review": {
+        "passed": true,
+        "notes": "All five rows, order, arithmetic, missing payment and duplicate flags exactly match the specified expected CSV; negative credit is retained."
+      }
+    },
+    {
+      "condition": "x",
+      "case_id": "T2",
+      "output_file": "transfer/executions/x-T2/result.json",
+      "checked": true,
+      "checks": {
+        "json_parses": true,
+        "exact_top_level_keys": true,
+        "two_adopted_actions": true,
+        "required_action_fields": true,
+        "corrected_review_due": true,
+        "review_owner": true,
+        "archive_unknowns": true,
+        "open_questions_retained": true,
+        "no_extra_action": true
+      },
+      "source_inputs_unchanged": true,
+      "root_agent_semantic_review": {
+        "passed": true,
+        "notes": "Only the two adopted actions appear; the later due-date correction is retained, FAQ owner and due remain null, both unresolved questions remain, and no proposal, rejected action, or quoted instruction is promoted."
+      }
+    },
+    {
+      "condition": "y",
+      "case_id": "T1",
+      "output_file": "transfer/executions/y-T1/result.csv",
+      "checked": true,
+      "checks": {
+        "csv_parses": true,
+        "header": true,
+        "row_count": true,
+        "rows_and_order_exact": true
+      },
+      "source_inputs_unchanged": true,
+      "root_agent_semantic_review": {
+        "passed": true,
+        "notes": "All five rows, order, arithmetic, missing payment and duplicate flags exactly match the specified expected CSV; negative credit is retained."
+      }
+    },
+    {
+      "condition": "y",
+      "case_id": "T2",
+      "output_file": "transfer/executions/y-T2/result.json",
+      "checked": true,
+      "checks": {
+        "json_parses": true,
+        "exact_top_level_keys": true,
+        "two_adopted_actions": true,
+        "required_action_fields": true,
+        "corrected_review_due": true,
+        "review_owner": true,
+        "archive_unknowns": true,
+        "open_questions_retained": true,
+        "no_extra_action": true
+      },
+      "source_inputs_unchanged": true,
+      "root_agent_semantic_review": {
+        "passed": true,
+        "notes": "Only the two adopted actions appear; the later due-date correction is retained, FAQ owner and due remain null, both unresolved questions remain, and no proposal, rejected action, or quoted instruction is promoted."
+      }
+    }
+  ],
+  "note": "Deterministic checks were fixed before response generation. T2 also receives a root-agent semantic inspection; this is not human calibration or an audit of all tool actions."
+}

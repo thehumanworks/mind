@@ -1,0 +1,98 @@
+[
+  {
+    "id": "H1",
+    "request": "Reply in one sentence: is the import ready to ship?",
+    "facts": "The import mapping is implemented and its local tests passed. One required staging run is still pending. Shipping requires the staging run to pass. No deployment has occurred.",
+    "candidates": {
+      "A": "Not yet: the import mapping is implemented and local tests passed, but the required staging run is still pending and must pass before shipping.",
+      "B": "Not yet: the import mapping is implemented and local tests passed, but the required staging run is still pending and must pass before shipping.",
+      "C": "Not yet\u2014the import mapping is implemented and local tests passed, but the required staging run is still pending and must pass before shipping."
+    }
+  },
+  {
+    "id": "H2",
+    "request": "I am reviewing the design as the backend engineer. Explain exactly how duplicate jobs are prevented, including races and the boundary.",
+    "facts": "The proposed design stores `(tenant_id, request_key)` under a database uniqueness constraint. Two simultaneous inserts with the same pair race; exactly one insert succeeds, and the loser reads the already-created job. A retry uses that same stored job. Different tenants can reuse a key. Keys are retained 7 days; after deletion the same pair can create another job. This is a design proposal, not an implemented or tested system. No delivery or exactly-once execution guarantee is implied by this job-creation rule.",
+    "candidates": {
+      "A": "The proposal prevents duplicate job creation for a given `(tenant_id, request_key)` while that key remains stored, using a database uniqueness constraint on the pair. This is a proposed design; it has not been implemented or tested.\n\n### Races and retries\n\n1. A request attempts to insert a job with its `(tenant_id, request_key)` pair.\n2. If two requests insert the same pair simultaneously, exactly one insert succeeds. The losing request reads the already-created job instead of creating another.\n3. A retry with that same pair uses the same stored job.\n\nThe database constraint enforces uniqueness even when requests arrive at the same time.\n\n### Boundary\n\n- **Tenant:** Uniqueness applies to the pair, so different tenants can reuse the same `request_key`.\n- **Time:** Keys are retained for seven days. After a key is deleted, the same pair can create another job.\n- **Execution:** This rule covers job creation only. It implies no delivery guarantee or exactly-once execution guarantee.",
+      "B": "The proposed design prevents duplicate job creation with a database uniqueness constraint on `(tenant_id, request_key)`. While that key is retained, only one job can be created for that tenant/key pair.\n\nHere is how the race and retries work:\n\n1. Two simultaneous requests attempt to insert jobs with the same pair.\n2. The database uniqueness constraint allows exactly one insert to succeed.\n3. The losing request reads the job created by the winner and uses that job.\n4. A retry with the same pair also uses the stored job.\n\nThe database constraint is what prevents both racing inserts from succeeding.\n\nThe boundaries are:\n\n- **Tenant:** Different tenants can reuse the same request key because uniqueness applies to the pair, not the key alone.\n- **Time:** Keys are retained for seven days. After a key is deleted, the same tenant/key pair can create another job.\n- **Guarantee:** This rule prevents duplicate job creation within those boundaries. It provides no delivery guarantee and does not guarantee exactly-once execution of the job.\n\nThis is a design proposal; it has not been implemented or tested.",
+      "C": "The proposed design prevents duplicate job creation for the same `(tenant_id, request_key)` while that key is retained. It has not been implemented or tested.\n\n### Enforcement and races\n\nThe database stores `(tenant_id, request_key)` under a uniqueness constraint. If two requests simultaneously try to insert the same pair, exactly one insert succeeds. The losing request reads the job that the winning request already created. A retry uses that same stored job.\n\nThe database constraint enforces uniqueness at insertion, so the two competing requests cannot both create a job for the same retained pair.\n\n### Boundary\n\n- **Tenant:** The key is scoped to a tenant. Different tenants can reuse the same `request_key`.\n- **Retention:** Keys are retained for 7 days. After a key is deleted, the same `(tenant_id, request_key)` pair can create another job.\n- **Execution:** This rule covers job creation. It does not imply a delivery guarantee or an exactly-once execution guarantee."
+    }
+  },
+  {
+    "id": "H3",
+    "request": "Summarise the benchmark result. Should we enable the new index everywhere?",
+    "facts": "A staging test of the new index used 1 million rows and one tenant. Read p95 fell from 800 ms to 260 ms. Write p95 rose from 20 ms to 31 ms. Storage grew from 2 GB to 3.2 GB. The other 47 tenants have not been tested. Production traffic and concurrent writes were not represented. The goal is better reads without unacceptable write delays. No maximum acceptable write latency has been agreed. No rollout happened. Recommending further validation or a staged trial is allowed; don't invent its results.",
+    "candidates": {
+      "A": "I would not enable the index everywhere yet. The staging benchmark shows a substantial read improvement, but writes became slower and storage increased.\n\nThe test used **1 million rows and one tenant**:\n\n| Metric | Before | With the new index | Change |\n|---|---:|---:|---:|\n| Read p95 | 800 ms | 260 ms | 67.5% lower |\n| Write p95 | 20 ms | 31 ms | 55% higher |\n| Storage | 2 GB | 3.2 GB | 60% higher |\n\nThe other 47 tenants have not been tested, and the benchmark did not represent production traffic or concurrent writes. We also have no agreed maximum acceptable write latency, so we cannot yet say whether the write penalty is acceptable for the goal.\n\nI recommend agreeing that write-latency limit, then validating representative tenants under load that includes production traffic patterns and concurrent writes. If those results meet the agreed criteria, a limited trial would be a reasonable next step before wider rollout. No rollout has occurred.",
+      "B": "**Do not enable the index everywhere yet.** The staging test improved reads substantially, but slowed writes and increased storage.\n\n| Measure | Before | With index | Change |\n|---|---:|---:|---:|\n| Read p95 | 800 ms | 260 ms | 67.5% lower |\n| Write p95 | 20 ms | 31 ms | 55% higher |\n| Storage | 2 GB | 3.2 GB | 60% more |\n\nThe test used one million rows and one tenant. The other 47 tenants have not been tested, and the test did not represent production traffic or concurrent writes. No maximum acceptable write latency has been agreed, so we cannot yet judge whether the write slowdown is acceptable.\n\nAgree a write-latency limit, validate representative tenants under production-like traffic and concurrent writes, then consider a staged trial if those results meet the read and write goals. No rollout has occurred.",
+      "C": "I would not enable the new index everywhere yet. The staging benchmark shows faster reads, but also slower writes and higher storage use, with too little coverage to justify a global rollout.\n\nThe test used **1 million rows for one tenant**:\n\n| Metric | Before | With the index | Change |\n| --- | ---: | ---: | ---: |\n| Read p95 | 800 ms | 260 ms | 67.5% lower |\n| Write p95 | 20 ms | 31 ms | 55% higher |\n| Storage | 2 GB | 3.2 GB | 60% higher |\n\nThe other 47 tenants have not been tested, and the benchmark did not represent production traffic or concurrent writes. We also have no agreed maximum acceptable write latency, so we cannot yet judge whether the write slowdown meets the goal of better reads without unacceptable write delays.\n\nNext, agree on an acceptable write-latency limit and validate the index across additional tenants with traffic representative of production, including concurrent writes. Use those results to decide whether to proceed with a staged rollout. No rollout has happened."
+    }
+  },
+  {
+    "id": "H4",
+    "request": "Make a short customer-facing update about the attachment failure, with no technical jargon.",
+    "facts": "Some attachments sent from 09:10 to 09:24 UTC were not delivered. Delivery was restored at 09:24 UTC. The missing attachments have not been resent. Customers whose attachments failed need to resend them. Message text was delivered normally. The number of affected customers is not yet known. Do not claim that all messages failed or that all attachments have been recovered.",
+    "candidates": {
+      "A": "Attachment delivery was restored at 09:24 UTC. Some attachments sent between 09:10 and 09:24 UTC were not delivered; message text was delivered normally. Missing attachments have not been resent, so please resend any that failed. We do not yet know how many customers were affected. We\u2019re sorry for the disruption.",
+      "B": "Attachment delivery was restored at 09:24 UTC. Some attachments sent between 09:10 and 09:24 UTC were not delivered and have not been resent. If your attachment was not delivered, please resend it. Message text was delivered normally.",
+      "C": "Some attachments sent between 09:10 and 09:24 UTC were not delivered. Attachment delivery was restored at 09:24 UTC. Missing attachments have not been resent, so please resend any attachments that failed. Message text was delivered normally. We\u2019re sorry for the disruption."
+    }
+  },
+  {
+    "id": "H5",
+    "request": "I am new to this internal tool. Show me a tiny example that teaches me how a dry run differs from applying a change.",
+    "facts": "Fictional tool: `roster rename --user sam --name Samira --dry-run` prints `Would rename sam to Samira` and makes no change. `roster rename --user sam --name Samira` changes the display name and prints `Renamed sam to Samira`. `roster show --user sam` then prints `Samira`. The exercise uses a disposable demo account. Do not run commands; present a guided example with the expected results, explaining what the learner should observe.",
+    "candidates": {
+      "A": "A dry run previews a change without saving it. Here is a tiny example using the disposable demo account, with the expected results.\n\n1. **Preview the rename:**\n\n   ```sh\n   roster rename --user sam --name Samira --dry-run\n   ```\n\n   Expected output: `Would rename sam to Samira`. The display name stays unchanged.\n\n2. **Apply the rename:**\n\n   ```sh\n   roster rename --user sam --name Samira\n   ```\n\n   Expected output: `Renamed sam to Samira`. Removing `--dry-run` makes this command change the display name.\n\n3. **Check the saved name:**\n\n   ```sh\n   roster show --user sam\n   ```\n\n   Expected output: `Samira`, confirming that the applied change was saved.",
+      "B": "A **dry run** previews a change without saving it; **applying** saves the change. Here\u2019s a guided example using the disposable demo account `sam`.\n\n1. **Preview the rename.**\n\n   ```bash\n   roster rename --user sam --name Samira --dry-run\n   ```\n\n   Expected output: `Would rename sam to Samira`. The display name stays unchanged.\n\n2. **Apply it by omitting `--dry-run`.**\n\n   ```bash\n   roster rename --user sam --name Samira\n   ```\n\n   Expected output: `Renamed sam to Samira`. The display name changes to `Samira`.\n\n3. **Check the saved name.**\n\n   ```bash\n   roster show --user sam\n   ```\n\n   Expected output: `Samira`, confirming that the change was saved.",
+      "C": "A **dry run** previews a change without saving it. **Applying** the change saves it. Use the disposable demo account `sam` for this example.\n\n1. **Preview the rename:**\n\n   ```bash\n   roster rename --user sam --name Samira --dry-run\n   ```\n\n   Expected: `Would rename sam to Samira`. The display name stays unchanged.\n\n2. **Apply the rename by omitting `--dry-run`:**\n\n   ```bash\n   roster rename --user sam --name Samira\n   ```\n\n   Expected: `Renamed sam to Samira`. This time, the display name changes.\n\n3. **Check the saved name:**\n\n   ```bash\n   roster show --user sam\n   ```\n\n   Expected: `Samira`, confirming that the change was saved."
+    }
+  },
+  {
+    "id": "H6",
+    "request": "Can we finish the website refresh by Friday? Tell me what decision you need from me.",
+    "facts": "It is Wednesday. The requested scope includes new page layouts and an analytics dashboard. The layouts can be ready by Friday with the existing analytics links. Building the new dashboard needs 3 additional working days. Engineering recommends shipping the layouts Friday and scheduling the dashboard for the following Wednesday. The user can instead keep the full scope and move the release to Wednesday. No plan has been approved. Ask the user to choose between these two concrete scope/date options; don't invent a precise approval deadline.",
+    "candidates": {
+      "A": "We can have the new page layouts ready by Friday with the existing analytics links. The new analytics dashboard needs three additional working days.\n\nI need you to choose between these two plans:\n\n1. **Release the layouts Friday, then the dashboard the following Wednesday.** Friday\u2019s release uses the existing analytics links. This is engineering\u2019s recommendation.\n2. **Release everything the following Wednesday.** Keep the full scope together and move the website refresh from Friday to Wednesday.\n\nNeither plan has been approved yet. Which option should we use?",
+      "B": "We can ship the new layouts by Friday with the existing analytics links. The full refresh, including the new dashboard, needs until the following Wednesday because the dashboard requires three additional working days.\n\nPlease choose between these two options:\n\n1. **Ship the layouts Friday, then the dashboard Wednesday \u2014 engineering\u2019s recommendation.** Use the existing analytics links in Friday\u2019s release and schedule the new dashboard for the following Wednesday.\n2. **Ship the full refresh Wednesday.** Move the release to the following Wednesday and deliver the layouts and dashboard together.\n\nNeither plan has been approved yet. Which option do you approve?",
+      "C": "Friday works for the new layouts with the existing analytics links. The new dashboard needs three additional working days, so the full scope would be ready the following Wednesday.\n\nPlease choose between these two plans:\n\n1. **Recommended: ship the layouts Friday.** Use the existing analytics links, then add the dashboard the following Wednesday.\n2. **Keep the full scope together.** Move the release of both the layouts and dashboard to the following Wednesday.\n\nWhich option should we use?"
+    }
+  },
+  {
+    "id": "R1",
+    "request": "Tighten this work update without changing its meaning.",
+    "facts": "The complete message is: 'After investigating several files, I was able to implement the requested fix.' No other work record is available.",
+    "candidates": {
+      "A": "I implemented the requested fix after investigating several files.",
+      "B": "I implemented the requested fix after investigating several files."
+    }
+  },
+  {
+    "id": "R2",
+    "request": "Make this opening concise without adding information.",
+    "facts": "The complete message is: 'I would like to provide an update regarding the migration.' No migration status or blocker is supplied.",
+    "candidates": {
+      "A": "Migration update:",
+      "B": "Update on the migration:"
+    }
+  },
+  {
+    "id": "R3",
+    "request": "Make this technical sentence clearer and shorter while preserving its claims.",
+    "facts": "The complete sentence is: 'The system performs an invalidation of cached data following a write.' The sentence does not specify how invalidation works or guarantee the result of the next read.",
+    "candidates": {
+      "A": "After a write, the system invalidates cached data.",
+      "B": "The system invalidates cached data after a write."
+    }
+  },
+  {
+    "id": "R4",
+    "request": "Make this update shorter and more confident.",
+    "facts": "The complete message is: 'Early measurements suggest the change may reduce timeout frequency. Only local tests have run.' The measurements are preliminary and no staging or production tests occurred.",
+    "candidates": {
+      "A": "Early measurements suggest the change lowers timeout frequency. Only local tests ran.",
+      "B": "Early measurements suggest the change may reduce timeout frequency. Tested only locally."
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "confirmed_actions": [
+    {
+      "action": "Review the permissions checklist.",
+      "owner": "Eli",
+      "due": "20 November 2026"
+    },
+    {
+      "action": "Archive the obsolete public FAQ.",
+      "owner": null,
+      "due": null
+    }
+  ],
+  "open_questions": [
+    "Who will archive the obsolete public FAQ?",
+    "Should we buy the analytics tool?"
+  ]
+}

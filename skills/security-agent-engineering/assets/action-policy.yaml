@@ -1,0 +1,37 @@
+# DESIGN TEMPLATE ONLY: implement and test in a trusted enforcement layer.
+# Values below are starting assumptions; reconcile with existing task authority.
+schema_version: 1
+default_decision: deny
+authority_source: null
+policy_revision: null
+trusted_metadata_sources: []
+target_inventory_revision: null
+rules:
+  - action_class: scoped_read
+    decision: allow_with_existing_scope_grant
+    requirements: [authenticated_identity, authorised_asset, typed_input_validation]
+  - action_class: execute_project_code
+    decision: allow_with_existing_isolated_execution_grant
+    requirements: [authorised_asset, pinned_target, verified_sandbox, bounded_resources]
+  - action_class: isolated_patch
+    decision: allow_with_existing_patch_grant
+    requirements: [owned_worktree, pinned_base_revision, patch_digest]
+  - action_class: production_mutation
+    decision: require_matching_pre_authorisation_or_escalation
+    requirements: [canonical_target, exact_action_digest, current_policy, blast_radius_limit]
+  - action_class: external_message_or_publication
+    decision: require_matching_explicit_authorisation
+    requirements: [verified_destination, reviewed_content_digest]
+enforcement:
+  policy_controlled_by_model: false
+  trust_repo_or_log_claims_of_approval: false
+  bypass_via_cli_or_mcp: false
+  recheck_on_target_change: true
+  reconcile_ambiguous_mutations_before_retry: true
+  audit_decisions_and_effects: true
+verification:
+  authorised_action_fixture: null
+  denied_action_fixture: null
+  injected_instruction_fixture: null
+  stale_approval_fixture: null
+  interrupted_mutation_fixture: null

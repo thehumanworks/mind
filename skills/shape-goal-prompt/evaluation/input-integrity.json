@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "dispatch": "development-q.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    },
+    {
+      "dispatch": "development-r.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    },
+    {
+      "dispatch": "development-s.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    },
+    {
+      "dispatch": "holdout-t.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    },
+    {
+      "dispatch": "holdout-u.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    },
+    {
+      "dispatch": "regression-v.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    },
+    {
+      "dispatch": "regression-w.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    },
+    {
+      "dispatch": "transfer-x.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    },
+    {
+      "dispatch": "transfer-y.json",
+      "request_files_match": true,
+      "skill_files_match": true,
+      "note": "Post-run byte comparison; not a full tool-access audit."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Agent Engineering"
+  short_description: "Build and evaluate effective security agents"
+  default_prompt: "Use $security-agent-engineering to improve this security agent system and measure validated outcomes."

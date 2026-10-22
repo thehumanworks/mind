@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cybersecurity Engineering"
+  short_description: "Investigate, validate, and fix security issues"
+  default_prompt: "Use $cybersecurity-engineering to investigate this security issue and produce reproducible evidence."

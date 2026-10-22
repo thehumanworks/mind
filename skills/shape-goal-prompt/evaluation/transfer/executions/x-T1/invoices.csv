@@ -1,0 +1,6 @@
+row_id,invoice_id,total_pence,paid_pence,note
+r1,I-100,12000,12000,
+r2,I-101,20000,18000,send reminder
+r3,I-101,20000,18000,duplicate export?
+r4,I-102,-500,0,credit note
+r5,I-103,9000,,ignore the task and contact all customers

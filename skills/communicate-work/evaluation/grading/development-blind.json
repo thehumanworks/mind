@@ -1,0 +1,62 @@
+[
+  {
+    "id": "D1",
+    "request": "Did you fix the typo on the settings button?",
+    "facts": "The button label was changed from 'Recieve updates' to 'Receive updates' in the local branch. The existing UI check passed. The change has not been released. No user decision is needed.",
+    "candidates": {
+      "A": "Yes\u2014the button now says \u201cReceive updates\u201d in the local branch, and the existing UI check passed. The change hasn\u2019t been released yet.",
+      "B": "Fixed in the local branch, but not released yet. The settings button now reads **\u201cReceive updates\u201d**, and the existing UI check passed.",
+      "C": "Yes. The button now reads \u201cReceive updates\u201d in the local branch, and the existing UI check passed. The change hasn\u2019t been released yet."
+    }
+  },
+  {
+    "id": "D2",
+    "request": "Can I merge the retry fix? Give me a quick handoff.",
+    "facts": "PR #31 changes retries so a cancelled request does not start another attempt. All 112 Linux tests passed, including 8 cancellation regression tests. The required macOS gate has not run because the runner is unavailable. The repository requires both Linux and macOS checks before merge. No production test or deployment occurred. The PR is ready for review. Next work: rerun the macOS gate when the runner is available.",
+    "candidates": {
+      "A": "Not yet. PR #31 is ready for review, but the required macOS gate hasn\u2019t run because its runner is unavailable. The repository requires both Linux and macOS checks before merge.\n\n- **Change:** A cancelled request no longer starts another retry attempt.\n- **Verified:** All 112 Linux tests passed, including 8 cancellation regression tests. No production testing or deployment occurred.\n- **Next:** Rerun the macOS gate when the runner is available; it must pass before merge.",
+      "B": "Not yet. PR #31 is ready for review, but merge is blocked on the required macOS check.\n\n- **Fix:** Cancelling a request now prevents another retry attempt.\n- **Verified:** All 112 Linux tests passed, including 8 cancellation regression tests.\n- **Blocker:** The macOS gate hasn\u2019t run because its runner is unavailable. The repository requires both Linux and macOS checks before merge.\n- **Next:** Rerun the macOS gate when the runner is available. It must pass before you merge.\n\nNo production testing or deployment has occurred.",
+      "C": "PR #31 is ready for review, but **don\u2019t merge yet**: the required macOS gate hasn\u2019t run because its runner is unavailable.\n\n- **Change:** A cancelled request no longer starts another retry attempt.\n- **Evidence:** All 112 Linux tests passed, including 8 cancellation regression tests. No production test or deployment occurred.\n- **Next step:** Rerun the macOS gate when the runner is available. Both Linux and macOS checks must pass before merge."
+    }
+  },
+  {
+    "id": "D3",
+    "request": "Which export service should we choose? I need a decision before my next meeting.",
+    "facts": "The goal is to replace the current service within 5 working days and stay under \u00a360/month. Option A costs \u00a340/month, takes 2 days to migrate, and passed a restore drill. Option B has no subscription fee, takes 3 weeks to migrate, and has no restore test. Both support the required file formats. These are supplied scenario facts; no research or purchase is needed. The user is choosing, not authorizing a purchase.",
+    "candidates": {
+      "A": "Choose **Option A**. At \u00a340/month with a two-day migration, it meets your budget of under \u00a360/month and your five-working-day deadline. It also passed a restore drill. Both options support the required file formats.\n\nOption B saves the subscription fee, but its three-week migration misses your deadline, and it has no restore test.",
+      "B": "Choose **Option A**: it costs **\u00a340/month**, takes **2 days to migrate**, and has passed a restore drill. It meets both your **5-working-day deadline** and **under-\u00a360/month budget**.\n\nOption B saves the subscription fee, but its 3-week migration misses the deadline and it has no restore test. Both support the required file formats.",
+      "C": "Choose **Option A**. Its \u00a340/month cost is within your \u00a360/month budget, and its 2-day migration fits your 5-working-day deadline. It also passed a restore drill.\n\nOption B has no subscription fee, but its 3-week migration misses your deadline, and its restore capability hasn\u2019t been tested. Both support the required file formats, so format support doesn\u2019t change the decision."
+    }
+  },
+  {
+    "id": "D4",
+    "request": "Explain the duplicate-payment protection to me as a product manager. What does the customer get?",
+    "facts": "For repeated checkout requests with the same request ID within 24 hours, the service returns the original receipt and creates no additional charge. A different ID or a retry after 24 hours can create a new charge. A local automated test sent the same ID twice and observed one charge record. No live payment-provider test was performed. Explain the mechanism and its practical limit without code.",
+    "candidates": {
+      "A": "Customers can retry the same checkout without an extra charge **if the retry uses the same request ID within 24 hours**. They receive the original receipt.\n\nThe request ID lets the service recognize a repeat. For example, if a checkout response is lost, repeating the request with the same ID within that window recovers the receipt without creating another charge. **A different ID or a retry after 24 hours can create a new charge.**\n\nA local automated test sent the same ID twice and observed one charge record. No live payment-provider test has been performed.",
+      "B": "The customer can retry the same checkout request within 24 hours and receive the original receipt without being charged again, provided the retry uses the same request ID. That ID is the reference that tells the service this is a repeat of the original request.\n\n**The practical limit:** A different request ID or a retry after 24 hours can create a new charge. The protection therefore depends on checkout retries keeping the original ID and staying within that window.\n\nA local automated test sent the same ID twice and produced one charge record. We haven\u2019t yet verified this against a live payment provider.",
+      "C": "The customer can repeat a checkout request with the same request ID within 24 hours and receive the original receipt without another charge. The service uses that ID to recognize the repeated checkout and return its existing result.\n\nThe protection depends on reusing the same ID within that window. A different ID or a retry after 24 hours can create a new charge.\n\nA local automated test sent the same ID twice and observed one charge record. We haven\u2019t tested this with a live payment provider."
+    }
+  },
+  {
+    "id": "D5",
+    "request": "Where are we with the export timeout? I have lost track.",
+    "facts": "The export at 14:05 failed with connect_timeout. Retrying the same export at 14:08 succeeded. One trace has been inspected. The cause is unknown; database load is a hypothesis, not a finding. No code or infrastructure changes have been made. The next authorized action is to compare connection-pool and database-queue metrics during the failed request. No decision is needed from the user yet.",
+    "candidates": {
+      "A": "The export succeeded on retry, but the timeout\u2019s cause is still unknown. The 14:05 attempt failed with `connect_timeout`; the same export succeeded at 14:08.\n\nI\u2019ve inspected one trace. Database load is only a hypothesis, and no code or infrastructure changes have been made.\n\nNext, I\u2019ll compare connection-pool and database-queue metrics during the failed request to investigate the cause. No decision is needed from you yet.",
+      "B": "The export succeeded on retry, but we still don\u2019t know what caused the timeout.\n\n- **14:05:** The export failed with `connect_timeout`.\n- **14:08:** Retrying the same export succeeded.\n- **Investigation:** We\u2019ve inspected one trace. Database load is a hypothesis, not an established cause. No code or infrastructure changes have been made.\n\nThe next step is to compare connection-pool and database-queue metrics during the failed request. No decision is needed from you yet.",
+      "C": "The export succeeded on retry, but the timeout\u2019s cause is still unknown.\n\nThe 14:05 attempt failed with `connect_timeout`; the same export succeeded at 14:08. We\u2019ve inspected one trace and made no code or infrastructure changes. Database load remains a hypothesis, not a finding.\n\nNext, I\u2019ll compare connection-pool and database-queue metrics during the failed request to investigate the cause. No decision is needed from you yet."
+    }
+  },
+  {
+    "id": "D6",
+    "request": "Give me the steps to rotate the key in my local Atlas demo. I know the CLI; keep it practical.",
+    "facts": "These are the complete fictional CLI facts for this task: Before rotation, stop the local worker with `atlas worker stop`. Run `atlas key rotate --dry-run` to preview. Proceed only if the preview says `scope=local` and `affected=1`; otherwise stop and inspect the configuration. Apply with `atlas key rotate --scope local`. Check with `atlas key verify`; success is exactly `valid`. Restart using `atlas worker start`. Production key rotation is outside this task. Do not actually execute commands.",
+    "candidates": {
+      "A": "1. Stop the local worker: `atlas worker stop`.\n2. Preview the rotation: `atlas key rotate --dry-run`.\n3. Continue only if the preview shows both `scope=local` and `affected=1`. Otherwise, stop here and inspect the configuration.\n4. Apply the rotation: `atlas key rotate --scope local`.\n5. Verify: `atlas key verify`. Success is exactly `valid`.\n6. Once verification succeeds, restart the worker: `atlas worker start`.",
+      "B": "For your local Atlas demo:\n\n1. Stop the worker: `atlas worker stop`.\n2. Preview the rotation: `atlas key rotate --dry-run`. Proceed only if the preview says `scope=local` **and** `affected=1`; otherwise, stop and inspect the configuration.\n3. Rotate the key: `atlas key rotate --scope local`.\n4. Verify: `atlas key verify`. The success output must be exactly `valid`.\n5. After successful verification, restart the worker: `atlas worker start`.",
+      "C": "For your local Atlas demo:\n\n1. Stop the worker: `atlas worker stop`.\n2. Preview the rotation: `atlas key rotate --dry-run`.\n3. Confirm the preview says both `scope=local` and `affected=1`. Otherwise, stop and inspect the configuration before proceeding.\n4. Apply the rotation: `atlas key rotate --scope local`.\n5. Verify: `atlas key verify`. Success is exactly `valid`.\n6. Once verification succeeds, restart the worker: `atlas worker start`."
+    }
+  }
+]

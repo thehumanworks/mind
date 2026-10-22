@@ -1,0 +1,128 @@
+[
+  {
+    "case_id": "D1",
+    "candidate": "A",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Immediately confirms the correction, supplies the exact label and passed UI check, and clearly limits completion to the unreleased local branch. The short paragraph needs no additional action or formatting."
+  },
+  {
+    "case_id": "D1",
+    "candidate": "B",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Leads with the local fix and unreleased status, then gives the corrected label and existing UI check result. It fully answers the small status question without adding an unnecessary decision."
+  },
+  {
+    "case_id": "D1",
+    "candidate": "C",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Answers yes immediately and preserves the exact correction, local scope, passed check, and absence of a release. Its compact paragraph fits the request."
+  },
+  {
+    "case_id": "D2",
+    "candidate": "A",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Clearly says not to merge yet, distinguishes review readiness from merge eligibility, and preserves the unavailable macOS gate, Linux evidence, production limits, and conditional next step. The grouped handoff is quick to scan."
+  },
+  {
+    "case_id": "D2",
+    "candidate": "B",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Opens with the blocked merge decision and review status. The fix, exact Linux test counts, missing required macOS check, runner dependency, and lack of production work are all clear; the next step explicitly requires a pass before merge."
+  },
+  {
+    "case_id": "D2",
+    "candidate": "C",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "The opening directly says not to merge and identifies the unavailable required gate. Concise groups preserve the cancellation behavior, exact verification results, production limits, and both-checks prerequisite for merge."
+  },
+  {
+    "case_id": "D3",
+    "candidate": "A",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Recommends Option A immediately and ties its cost and migration time to both constraints. It includes restore evidence, common format support, and Option B's decisive disadvantages without implying a purchase."
+  },
+  {
+    "case_id": "D3",
+    "candidate": "B",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Provides an immediate choice with the relevant costs, timelines, restore status, and shared format support. The two short paragraphs make the deadline and budget rationale easy to retrieve without inventing execution."
+  },
+  {
+    "case_id": "D3",
+    "candidate": "C",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Leads with Option A and explains why its actual cost and migration time satisfy the constraints. The restore comparison and equivalent formats complete the decision rationale; it remains a recommendation rather than a purchase claim."
+  },
+  {
+    "case_id": "D4",
+    "candidate": "A",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Starts with the customer benefit and its ID and time conditions. The lost-response example explains the mechanism for a product manager, and the new-charge exceptions and local-only test evidence are explicit."
+  },
+  {
+    "case_id": "D4",
+    "candidate": "B",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Explains the receipt and charge benefit with both conditions in the opening, defines the request ID plainly, and separately states the practical limit. It accurately distinguishes the local test from unperformed live-provider verification."
+  },
+  {
+    "case_id": "D4",
+    "candidate": "C",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Connects the same-ID, 24-hour condition directly to the customer benefit and gives a clear non-code explanation. The exceptions and limited test scope remain explicit in short, logically grouped paragraphs."
+  },
+  {
+    "case_id": "D5",
+    "candidate": "A",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Leads with successful retry and unknown cause, then preserves both timestamps, the error, one inspected trace, hypothesis status, and absence of changes. The authorized metrics comparison is clearly future work, with no user decision requested."
+  },
+  {
+    "case_id": "D5",
+    "candidate": "B",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "The opening gives the present status and uncertainty, and the timeline restores context efficiently. Investigation scope, database-load hypothesis, unchanged system, authorized next comparison, and lack of a needed user decision are all accurate."
+  },
+  {
+    "case_id": "D5",
+    "candidate": "C",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "States recovery and unresolved cause first. The compact evidence paragraph preserves the exact event times, trace count, absence of changes, and hypothesis status; the next action is correctly presented as pending and authorized."
+  },
+  {
+    "case_id": "D6",
+    "candidate": "A",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Begins directly with the practical procedure. All commands and their order are correct, both preview conditions precede rotation, unexpected preview output requires stopping, and exact valid verification precedes restart. No execution is claimed."
+  },
+  {
+    "case_id": "D6",
+    "candidate": "B",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Identifies the local task and supplies a concise, ordered procedure suited to a CLI user. It retains the stopped-worker prerequisite, both preview checks, stop-and-inspect branch, exact success output, and verification-dependent restart without claiming execution."
+  },
+  {
+    "case_id": "D6",
+    "candidate": "C",
+    "scores": {"answer_first": 2, "decision_completeness": 2, "actionability": 2, "audience_fit": 2, "scanability": 2, "economy": 2},
+    "critical_failures": [],
+    "reason": "Provides the local procedure immediately with correct commands and sequence. Both preview requirements and the stop-and-inspect instruction appear before applying the rotation, and restart follows successful exact-output verification. It stays practical and makes no execution claim."
+  }
+]

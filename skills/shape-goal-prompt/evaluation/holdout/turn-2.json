@@ -1,0 +1,14 @@
+[
+  {
+    "case_id": "H1",
+    "user": "We don't know our current retention rate or whether reminders help. For this assignment I want diagnosis and a recommendation, not implementation. Compare patterns in the notes with the handbook; separate evidence from speculation and show me which change to test first. No contacting volunteers. The 90% is a long-term ambition, not a promise for this project."
+  },
+  {
+    "case_id": "H3",
+    "user": "I can't get those details today. Please give me two possible interpretations and a provisional prompt I can finish later. I don't want you to choose the client, budget, currency, or previous project for me."
+  },
+  {
+    "case_id": "H4",
+    "user": "Correction: visual similarity is enough; exact pixels no longer matter. But I don't know how to judge an acceptable difference. I want a browser demo with side-by-side images so I can choose a quality setting, not a production change. Draft that narrower task, but don't call it agreed yet."
+  }
+]

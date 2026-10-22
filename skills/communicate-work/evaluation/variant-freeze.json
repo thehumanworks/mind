@@ -1,0 +1,10 @@
+{
+  "variants/lean/communicate-work/SKILL.md": {
+    "sha256": "b0dd01e4b71df77807ad8b2ef15c9ffb0028a2af51059f3803d44112b6db1770",
+    "words": 689
+  },
+  "variants/operational/communicate-work/SKILL.md": {
+    "sha256": "f5732081cdb3f28ff870c91538fa3519187539d9850126858063571984338bea",
+    "words": 1173
+  }
+}

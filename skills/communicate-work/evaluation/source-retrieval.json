@@ -1,0 +1,372 @@
+{
+  "date": "2026-10-21",
+  "scope": "Only user-supplied communication sources. Retrieval status is not a claim that every linked chapter or full book was read.",
+  "sources": [
+    {
+      "group": "general",
+      "url": "https://newsletter.weskao.com/p/how-to-be-concise",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://www.staceyhankeinc.com/blog/master-brevity-less-is-more",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://ecampusontario.pressbooks.pub/communicationcommons/chapter/be-concise/",
+      "status": "indexed text",
+      "note": "Direct open returned 403; substantial text returned for the exact URL."
+    },
+    {
+      "group": "general",
+      "url": "https://communicationprogram.wharton.upenn.edu/library/communicating-concisely/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://englishcenter.nl/concision/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://writers.com/concise-writing",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://www.talaera.com/emails-and-writing/concise-writing/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://www.adobe.com/acrobat/resources/conciseness-in-writing.html",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/index.html",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/avoid_common_pitfalls.html",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/eliminating_words.html",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://www.gutenberg.org/ebooks/37134",
+      "status": "catalog/contents only",
+      "note": "Book catalog and metadata; full book text not read."
+    },
+    {
+      "group": "general",
+      "url": "https://milnepublishing.geneseo.edu/elements-of-style/",
+      "status": "catalog/contents only",
+      "note": "Landing page and contents; full book text not read."
+    },
+    {
+      "group": "general",
+      "url": "https://en.wikisource.org/wiki/The_Elements_of_Style",
+      "status": "catalog/contents only",
+      "note": "Contents and section headings; detailed chapters not read."
+    },
+    {
+      "group": "general",
+      "url": "https://www.wordtune.com/blog/how-to-write-concisely-and-effectively-free-checklist",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "general",
+      "url": "https://shorewalker.net/client-guides/tips-for-simplifying-your-message.html",
+      "status": "indexed text",
+      "note": "Direct open returned 406; substantial text returned for the exact URL."
+    },
+    {
+      "group": "general",
+      "url": "https://www.scarletink.com/writing-and-speaking-clearly-and-concisely/",
+      "status": "public excerpt",
+      "note": "Used only accessible excerpt; subscriber-only remainder not read."
+    },
+    {
+      "group": "general",
+      "url": "https://guide.businesscommunication.wisc.edu/communication-prof-aud/communication-strategies/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://fourweekmba.com/bluf-bottom-line-up-front/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://en.wikipedia.org/wiki/BLUF_(communication)",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://mattstromawn.com/writing/bluf/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://blog.logrocket.com/product-management/using-the-bluf-acronym-to-improve-communication/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://codeless.io/bluf/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://umbrex.com/resources/front-line-manager-training-program/lead-with-the-answer/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://legalclarity.org/bottom-line-up-front-bluf-what-it-is-and-how-to-use-it/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://www.shortform.com/blog/the-pyramid-principle-barbara-minto/",
+      "status": "public excerpt",
+      "note": "Used only public preview; paid full summary not read."
+    },
+    {
+      "group": "structure",
+      "url": "https://strategyu.co/pyramid-principle-partone/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://strategycase.com/the-pyramid-principle-case-interview/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://www.tosummarise.com/book-summary-the-pyramid-principle-by-barbara-minto/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "structure",
+      "url": "https://rivereditor.com/guides/how-to-write-briefing-memos-executives-officials-2026",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://developers.google.com/style",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://developers.google.com/style/highlights",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://learn.microsoft.com/en-us/style-guide/",
+      "status": "overview",
+      "note": "Redirected to /welcome/; public article text visible despite generic authorization banner."
+    },
+    {
+      "group": "technical",
+      "url": "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice",
+      "status": "article retrieved",
+      "note": "Public article text visible despite generic authorization banner."
+    },
+    {
+      "group": "technical",
+      "url": "https://learn.microsoft.com/en-us/style-guide/developer-content/",
+      "status": "article retrieved",
+      "note": "Public article text visible despite generic authorization banner."
+    },
+    {
+      "group": "technical",
+      "url": "https://docs.gitlab.com/development/documentation/styleguide/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://docs.digitalocean.com/style/",
+      "status": "overview",
+      "note": "Public style-guide index and clarity/consistency principles."
+    },
+    {
+      "group": "technical",
+      "url": "https://handbook.strapi.io/user-success-manual/12-rules-of-technical-writing",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://developer.mozilla.org/en-US/blog/technical-writing",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://www.mintlify.com/resources/how-to-write-technical-documentation",
+      "status": "article retrieved",
+      "note": "Supplied URL redirected to corresponding /library/ article."
+    },
+    {
+      "group": "technical",
+      "url": "https://www.innoq.com/en/blog/2022/01/principles-of-technical-documentation/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://www.writethedocs.org/guide/",
+      "status": "overview",
+      "note": "Public documentation guide index."
+    },
+    {
+      "group": "technical",
+      "url": "https://www.writethedocs.org/guide/writing/style-guides/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://www.writethedocs.org/guide/writing/docs-principles/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://diataxis.fr/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://diataxis.fr/start-here/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "technical",
+      "url": "https://developers.google.com/tech-writing",
+      "status": "overview",
+      "note": "Course overview; detailed child lessons not read."
+    },
+    {
+      "group": "technical",
+      "url": "https://developers.google.com/tech-writing/one",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "plain",
+      "url": "https://centerforplainlanguage.org/learning-training/tools-training/",
+      "status": "overview",
+      "note": "Resource index; linked full guides not read."
+    },
+    {
+      "group": "plain",
+      "url": "https://commons.wikimedia.org/wiki/File:Federal_Plain_Language_Guidelines.pdf",
+      "status": "catalog/contents only",
+      "note": "PDF landing page and metadata; full document not read."
+    },
+    {
+      "group": "plain",
+      "url": "https://digital.gov/guides/plain-language/principles",
+      "status": "overview",
+      "note": "Public principles overview."
+    },
+    {
+      "group": "plain",
+      "url": "https://www.cpsc.gov/About-CPSC/Policies-Statements-and-Directives/plain-language-principles",
+      "status": "indexed text",
+      "note": "Direct open returned 403; substantial text returned for exact URL."
+    },
+    {
+      "group": "plain",
+      "url": "https://procomm.ieee.org/communication-resources-for-engineers/other-topics/plain-language/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "plain",
+      "url": "https://iastate.pressbooks.pub/technicalprofessionalcommunication2e/chapter/2-3-plain-language/",
+      "status": "indexed text",
+      "note": "Direct open returned 403; substantial text returned for exact URL."
+    },
+    {
+      "group": "plain",
+      "url": "https://www.archives.gov/federal-register/write/legal-docs/clear-writing.html",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "plain",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/plain-english-please",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "additional",
+      "url": "https://www.nngroup.com/articles/be-succinct-writing-for-the-web/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "additional",
+      "url": "https://www.nngroup.com/articles/inverted-pyramids-in-cyberspace/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "additional",
+      "url": "https://algocademy.com/blog/how-to-explain-complex-technical-concepts-simply-a-comprehensive-guide/",
+      "status": "article retrieved",
+      "note": "Only public text at the supplied source was considered."
+    },
+    {
+      "group": "additional",
+      "url": "https://chrisfenning.com/3-ways-to-turn-complex-it-into-simple-descriptions/",
+      "status": "unavailable",
+      "note": "Open failed; exact-URL search returned no usable content. Not used as substantive authority."
+    },
+    {
+      "group": "additional",
+      "url": "https://tonguetoquill.com/resources/afh-33-337",
+      "status": "unavailable",
+      "note": "Open failed. Not used as substantive authority."
+    }
+  ]
+}

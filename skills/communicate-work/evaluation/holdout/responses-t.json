@@ -1,0 +1,26 @@
+[
+  {
+    "id": "H1",
+    "response": "Not yet—the import mapping is implemented and local tests passed, but the required staging run is still pending and must pass before shipping."
+  },
+  {
+    "id": "H2",
+    "response": "The proposed design prevents duplicate job creation for the same `(tenant_id, request_key)` while that key is retained. It has not been implemented or tested.\n\n### Enforcement and races\n\nThe database stores `(tenant_id, request_key)` under a uniqueness constraint. If two requests simultaneously try to insert the same pair, exactly one insert succeeds. The losing request reads the job that the winning request already created. A retry uses that same stored job.\n\nThe database constraint enforces uniqueness at insertion, so the two competing requests cannot both create a job for the same retained pair.\n\n### Boundary\n\n- **Tenant:** The key is scoped to a tenant. Different tenants can reuse the same `request_key`.\n- **Retention:** Keys are retained for 7 days. After a key is deleted, the same `(tenant_id, request_key)` pair can create another job.\n- **Execution:** This rule covers job creation. It does not imply a delivery guarantee or an exactly-once execution guarantee."
+  },
+  {
+    "id": "H3",
+    "response": "I would not enable the new index everywhere yet. The staging benchmark shows faster reads, but also slower writes and higher storage use, with too little coverage to justify a global rollout.\n\nThe test used **1 million rows for one tenant**:\n\n| Metric | Before | With the index | Change |\n| --- | ---: | ---: | ---: |\n| Read p95 | 800 ms | 260 ms | 67.5% lower |\n| Write p95 | 20 ms | 31 ms | 55% higher |\n| Storage | 2 GB | 3.2 GB | 60% higher |\n\nThe other 47 tenants have not been tested, and the benchmark did not represent production traffic or concurrent writes. We also have no agreed maximum acceptable write latency, so we cannot yet judge whether the write slowdown meets the goal of better reads without unacceptable write delays.\n\nNext, agree on an acceptable write-latency limit and validate the index across additional tenants with traffic representative of production, including concurrent writes. Use those results to decide whether to proceed with a staged rollout. No rollout has happened."
+  },
+  {
+    "id": "H4",
+    "response": "Attachment delivery was restored at 09:24 UTC. Some attachments sent between 09:10 and 09:24 UTC were not delivered; message text was delivered normally. Missing attachments have not been resent, so please resend any that failed. We do not yet know how many customers were affected. We’re sorry for the disruption."
+  },
+  {
+    "id": "H5",
+    "response": "A **dry run** previews a change without saving it; **applying** saves the change. Here’s a guided example using the disposable demo account `sam`.\n\n1. **Preview the rename.**\n\n   ```bash\n   roster rename --user sam --name Samira --dry-run\n   ```\n\n   Expected output: `Would rename sam to Samira`. The display name stays unchanged.\n\n2. **Apply it by omitting `--dry-run`.**\n\n   ```bash\n   roster rename --user sam --name Samira\n   ```\n\n   Expected output: `Renamed sam to Samira`. The display name changes to `Samira`.\n\n3. **Check the saved name.**\n\n   ```bash\n   roster show --user sam\n   ```\n\n   Expected output: `Samira`, confirming that the change was saved."
+  },
+  {
+    "id": "H6",
+    "response": "We can ship the new layouts by Friday with the existing analytics links. The full refresh, including the new dashboard, needs until the following Wednesday because the dashboard requires three additional working days.\n\nPlease choose between these two options:\n\n1. **Ship the layouts Friday, then the dashboard Wednesday — engineering’s recommendation.** Use the existing analytics links in Friday’s release and schedule the new dashboard for the following Wednesday.\n2. **Ship the full refresh Wednesday.** Move the release to the following Wednesday and deliver the layouts and dashboard together.\n\nNeither plan has been approved yet. Which option do you approve?"
+  }
+]

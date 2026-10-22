@@ -1,0 +1,62 @@
+[
+  {
+    "task_name": "respond_dev_q",
+    "fork_turns": "none",
+    "message": "Use $communicate-work at /workspace/scratch/b17a28db101b/communication-skill-work/variants/lean/communicate-work/SKILL.md to respond to the six independent user requests in /workspace/scratch/b17a28db101b/communication-skill-work/eval/development/requests.json. Treat each case as a separate conversation; its facts are the complete available work record. Produce the actual user-facing reply for each request. No browsing or external action is needed. Read only those two input files, not neighboring files. Save a JSON array of {\"id\":\"case ID\",\"response\":\"complete reply\"} to /workspace/scratch/b17a28db101b/communication-skill-work/eval/development/responses-q.json. Preserve the replies verbatim in that artifact. Return only the output path when finished."
+  },
+  {
+    "task_name": "respond_dev_r",
+    "fork_turns": "none",
+    "message": "Use $communicate-work at /workspace/scratch/b17a28db101b/communication-skill-work/variants/operational/communicate-work/SKILL.md to respond to the six independent user requests in /workspace/scratch/b17a28db101b/communication-skill-work/eval/development/requests.json. Treat each case as a separate conversation; its facts are the complete available work record. Produce the actual user-facing reply for each request. No browsing or external action is needed. Read only those two input files, not neighboring files. Save a JSON array of {\"id\":\"case ID\",\"response\":\"complete reply\"} to /workspace/scratch/b17a28db101b/communication-skill-work/eval/development/responses-r.json. Preserve the replies verbatim in that artifact. Return only the output path when finished."
+  },
+  {
+    "task_name": "respond_dev_s",
+    "fork_turns": "none",
+    "message": "Respond to the six independent user requests in /workspace/scratch/b17a28db101b/communication-skill-work/eval/development/requests.json. Treat each case as a separate conversation; its facts are the complete available work record. Produce the actual user-facing reply for each request. No browsing or external action is needed. Read only that input file, not neighboring files or other skills. Save a JSON array of {\"id\":\"case ID\",\"response\":\"complete reply\"} to /workspace/scratch/b17a28db101b/communication-skill-work/eval/development/responses-s.json. Preserve the replies verbatim in that artifact. Return only the output path when finished."
+  },
+  {
+    "task_name": "respond_holdout_t",
+    "fork_turns": "none",
+    "message": "Use $communicate-work at /workspace/scratch/b17a28db101b/communication-skill-work/variants/revised/communicate-work/SKILL.md to respond to the six independent user requests in /workspace/scratch/b17a28db101b/communication-skill-work/eval/holdout/requests.json. Treat each case as a separate conversation; its facts are the complete available work record. Produce the actual user-facing reply for each request. No browsing or external action is needed. Read only those two input files, not neighboring files. Save a JSON array of {\"id\":\"case ID\",\"response\":\"complete reply\"} to /workspace/scratch/b17a28db101b/communication-skill-work/eval/holdout/responses-t.json. Preserve replies verbatim. Return only the output path."
+  },
+  {
+    "task_name": "respond_holdout_u",
+    "fork_turns": "none",
+    "message": "Use $communicate-work at /workspace/scratch/b17a28db101b/communication-skill-work/variants/lean/communicate-work/SKILL.md to respond to the six independent user requests in /workspace/scratch/b17a28db101b101b/communication-skill-work/eval/holdout/requests.json. Correction: the exact requests path is /workspace/scratch/b17a28db101b/communication-skill-work/eval/holdout/requests.json. Treat each case as a separate conversation; its facts are the complete available work record. Produce the actual user-facing reply for each request. No browsing or external action is needed. Read only the skill and corrected requests path, not neighboring files. Save a JSON array of {\"id\":\"case ID\",\"response\":\"complete reply\"} to /workspace/scratch/b17a28db101b/communication-skill-work/eval/holdout/responses-u.json. Preserve replies verbatim. Return only the output path."
+  },
+  {
+    "task_name": "respond_holdout_v",
+    "fork_turns": "none",
+    "message": "Respond to the six independent user requests in /workspace/scratch/b17a28db101b/communication-skill-work/eval/holdout/requests.json. Treat each case as a separate conversation; its facts are the complete available work record. Produce the actual user-facing reply for each request. No browsing or external action is needed. Read only that input file, not neighboring files or other skills. Save a JSON array of {\"id\":\"case ID\",\"response\":\"complete reply\"} to /workspace/scratch/b17a28db101b/communication-skill-work/eval/holdout/responses-v.json. Preserve replies verbatim. Return only the output path."
+  },
+  {
+    "task_name": "respond_regression_w",
+    "fork_turns": "none",
+    "message": "Use $communicate-work at /workspace/scratch/b17a28db101b/communication-skill-work/variants/revised/communicate-work/SKILL.md to respond to the four independent editing requests in /workspace/scratch/b17a28db101b/communication-skill-work/eval/regression/requests.json. Treat each request as a separate conversation. Produce only the actual user-facing edited response for each case, using the supplied text and facts. No browsing is needed. Read only those two input files. Save a JSON array of {\"id\":\"case ID\",\"response\":\"complete reply\"} to /workspace/scratch/b17a28db101b/communication-skill-work/eval/regression/responses-w.json. Return only the output path."
+  },
+  {
+    "task_name": "respond_regression_x",
+    "fork_turns": "none",
+    "message": "Use $communicate-work at /workspace/scratch/b17a28db101b/communication-skill-work/variants/lean/communicate-work/SKILL.md to respond to the four independent editing requests in /workspace/scratch/b17a28db101b/communication-skill-work/eval/regression/requests.json. Treat each request as a separate conversation. Produce only the actual user-facing edited response for each case, using the supplied text and facts. No browsing is needed. Read only those two input files. Save a JSON array of {\"id\":\"case ID\",\"response\":\"complete reply\"} to /workspace/scratch/b17a28db101b/communication-skill-work/eval/regression/responses-x.json. Return only the output path."
+  },
+  {
+    "task_name": "grade_dev_one",
+    "fork_turns": "none",
+    "message": "Independently grade the communication responses in /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/development-blind.json using /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/rubric.md. Read only those two files. The candidate labels are randomized for each case. Do not browse or inspect neighboring artifacts. Write the rubric's JSON array of 18 ratings to /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/development-grades-1.json. Use evidence from each supplied case; do not reward length or formatting for their own sake. Return only the output path."
+  },
+  {
+    "task_name": "grade_dev_two",
+    "fork_turns": "none",
+    "message": "Independently grade the communication responses in /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/development-blind.json using /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/rubric.md. Read only those two files. The candidate labels are randomized for each case. Do not browse or inspect neighboring artifacts. Write the rubric's JSON array of 18 ratings to /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/development-grades-2.json. Use evidence from each supplied case; do not reward length or formatting for their own sake. Return only the output path."
+  },
+  {
+    "task_name": "grade_validation_one",
+    "fork_turns": "none",
+    "message": "Independently grade every communication response in /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/validation-blind.json using /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/rubric.md. Read only those two files. Labels are randomized for each case. There are 18 responses across H1–H6 and 8 across R1–R4, for 26 ratings. Do not browse or inspect neighboring artifacts. Save the rubric's JSON array to /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/validation-grades-1.json. Quote evidence for deductions, distinguish useful detail from redundancy, and do not reward length or formatting for its own sake. Return only the output path."
+  },
+  {
+    "task_name": "grade_validation_two",
+    "fork_turns": "none",
+    "message": "Independently grade every communication response in /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/validation-blind.json using /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/rubric.md. Read only those two files. Labels are randomized for each case. There are 18 responses across H1–H6 and 8 across R1–R4, for 26 ratings. Do not browse or inspect neighboring artifacts. Save the rubric's JSON array to /workspace/scratch/b17a28db101b/communication-skill-work/eval/grading/validation-grades-2.json. Quote evidence for deductions, distinguish useful detail from redundancy, and do not reward length or formatting for its own sake. Return only the output path."
+  }
+]

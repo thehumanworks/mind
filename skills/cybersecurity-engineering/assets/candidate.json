@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "candidate_id": "CAND-001",
+  "claim": "Replace with a falsifiable claim",
+  "boundary": "Replace with affected security boundary",
+  "scope": {
+    "systems": [],
+    "source_revision": null,
+    "deployment_revision": null
+  },
+  "attacker_prerequisites": [],
+  "disproof_condition": "Replace with evidence that would contradict a necessary condition",
+  "status": "hypothesis",
+  "evidence": [],
+  "decision": {
+    "reason": "Investigation has not started",
+    "basis": "none",
+    "evidence_ids": [],
+    "coverage": "",
+    "proof_gaps": [],
+    "invalidation_conditions": []
+  },
+  "acceptance": {
+    "status": "unreviewed",
+    "owner": null,
+    "reason": null
+  },
+  "next_test": {
+    "question": null,
+    "command_or_query": null,
+    "expected_discriminating_result": null,
+    "cost_risk": null
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "role": "claim",
+      "explanation": "Replace with the claimed security violation"
+    },
+    {
+      "id": "H2",
+      "role": "alternative",
+      "explanation": "Replace with a plausible alternative explanation"
+    }
+  ]
+}

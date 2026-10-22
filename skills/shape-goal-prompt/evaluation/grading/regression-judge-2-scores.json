@@ -1,0 +1,134 @@
+{
+  "records": [
+    {
+      "case_id": "R1",
+      "label": "R1-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 1,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Clarification: asks about implementation authority and the intake date, but leaves the actual onboarding completion milestone implicit. The draft bounds the journey at \"completing signup\" without resolving whether readiness requires more.",
+        "Clarification/proportionality: \"Delivery scope: unresolved\" is followed by a substantial six-section execution draft. The alternative delivery branches, priorities, acceptance criteria, and stopping instructions create avoidable review burden before that consequential choice is settled.",
+        "The implementation default and acceptance criteria are explicitly proposed, so they are not treated as invented agreement or binding unsupported requirements."
+      ],
+      "substantive_questions": 2,
+      "overall_notes": "A useful, honest provisional prompt with observable walkthrough evidence and clear authority limits. Its two requested decisions are delivery scope and the intake date. The main weaknesses are premature detail and the missing readiness milestone, rather than factual distortion or an unsupported guarantee."
+    },
+    {
+      "case_id": "R3",
+      "label": "R3-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 1,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Handoff: the response supplies clarification questions and a measurement approach, but no standalone agent prompt or complete executor input/output contract yet.",
+        "The response correctly preserves \"a couple of days\" and \"Don't do the work yet,\" proposes comparable baseline/final evidence, and requires honest reporting of unmet targets."
+      ],
+      "substantive_questions": 4,
+      "overall_notes": "A strong and proportionate clarification turn. Counted topics are the speed measure/target, cost measure/target, required output invariants, and permitted dependency/hosting changes; the two numbered items bundle these four decisions. Prompt drafting appropriately remains pending answers, which limits present handoff completeness."
+    },
+    {
+      "case_id": "R6",
+      "label": "R6-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 1,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Handoff: \"Should I build the prompt around that objective\" leaves the actual standalone prompt and full delivery contract for a subsequent turn.",
+        "The proposed objective retains the investor brief while correctly rejecting causal proof from interviews alone. Traceable passages, contrary accounts, alternative explanations, and evidence limits provide an honest evidence standard."
+      ],
+      "substantive_questions": 1,
+      "overall_notes": "A concise correction of the unsupported premise followed by one consequential question: whether to adopt the proposed evidence-supported objective. It does not invent agreement, abandon the investor deliverable, or promise causality. The exchange is appropriately still at the clarification stage."
+    },
+    {
+      "case_id": "R3",
+      "label": "R3-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 1,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 1,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Clarification: the reply says the target definitions and time allowance remain unresolved, yet proceeds into an elaborate execution prompt before the user settles those decisions. Required output invariants are proposed generally rather than explored with a discriminating question.",
+        "Proportionality: the initial target question, proposed objective thresholds, explicit 0.5-times acceptance thresholds, and multiple completion/tradeoff instructions repeat substantial material while the target is still provisional. Optional checkpoint guidance also increases first-turn scaffolding.",
+        "All numerical interpretations and preservation requirements are clearly marked as proposals requiring confirmation. This avoids a fidelity or invented-agreement failure, and the comparable measurement and time-bounded stopping rules are sound."
+      ],
+      "substantive_questions": 3,
+      "overall_notes": "A technically strong conditional handoff with explicit correctness, cost, timing, authority, and stopping boundaries. Counted decisions are the speed definition, cost definition, and whether the time budget means effort or elapsed time. The principal weakness is drafting at length before those material choices are settled; no optimization work is actually performed."
+    },
+    {
+      "case_id": "R6",
+      "label": "R6-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 1,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Clarification: \"Here's a prompt for that proposed framing\" proceeds directly to detailed instructions without inviting the user to settle the material revision from proving a causal effect to assessing a retention hypothesis.",
+        "The revision is explicitly proposed, and interviews are never represented as establishing an uplift or causality. Consequently this is a sequencing weakness, not invented agreement or a fidelity failure.",
+        "The detailed evidence distinctions, source locations, sample-count limits, counterevidence, and acceptance checks directly support the requested investor brief and justify the prompt's length."
+      ],
+      "substantive_questions": 0,
+      "overall_notes": "A complete and defensible proposed research prompt. It preserves the investor purpose, handles missing interview inputs, and makes success checkable without misleading causal claims. The remaining issue is that the substantive objective revision is offered as a full draft before the user chooses it."
+    },
+    {
+      "case_id": "R1",
+      "label": "R1-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 1,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 1,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Acceptance: the response asks \"what marks a new starter as ready\" but does not yet establish an agreed completion check or a method for verifying that onboarding works.",
+        "Handoff: this is a focused clarification turn, not yet a standalone executable prompt with inputs, deliverables, and verification instructions.",
+        "The questions appropriately separate implementation versus a fix plan, the deadline, and the readiness milestone while leaving diagnosis to the agent."
+      ],
+      "substantive_questions": 3,
+      "overall_notes": "A strong first reply that preserves the unknown cause and avoids choosing the delivery scope prematurely. The two numbered items request three substantive decisions: scope, date, and completion milestone. Present acceptance and handoff completeness remain limited because the user has not answered yet."
+    }
+  ]
+}

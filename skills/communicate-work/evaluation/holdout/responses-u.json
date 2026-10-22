@@ -1,0 +1,26 @@
+[
+  {
+    "id": "H1",
+    "response": "Not yet: the import mapping is implemented and local tests passed, but the required staging run is still pending and must pass before shipping."
+  },
+  {
+    "id": "H2",
+    "response": "The proposal prevents duplicate job creation for a given `(tenant_id, request_key)` while that key remains stored, using a database uniqueness constraint on the pair. This is a proposed design; it has not been implemented or tested.\n\n### Races and retries\n\n1. A request attempts to insert a job with its `(tenant_id, request_key)` pair.\n2. If two requests insert the same pair simultaneously, exactly one insert succeeds. The losing request reads the already-created job instead of creating another.\n3. A retry with that same pair uses the same stored job.\n\nThe database constraint enforces uniqueness even when requests arrive at the same time.\n\n### Boundary\n\n- **Tenant:** Uniqueness applies to the pair, so different tenants can reuse the same `request_key`.\n- **Time:** Keys are retained for seven days. After a key is deleted, the same pair can create another job.\n- **Execution:** This rule covers job creation only. It implies no delivery guarantee or exactly-once execution guarantee."
+  },
+  {
+    "id": "H3",
+    "response": "**Do not enable the index everywhere yet.** The staging test improved reads substantially, but slowed writes and increased storage.\n\n| Measure | Before | With index | Change |\n|---|---:|---:|---:|\n| Read p95 | 800 ms | 260 ms | 67.5% lower |\n| Write p95 | 20 ms | 31 ms | 55% higher |\n| Storage | 2 GB | 3.2 GB | 60% more |\n\nThe test used one million rows and one tenant. The other 47 tenants have not been tested, and the test did not represent production traffic or concurrent writes. No maximum acceptable write latency has been agreed, so we cannot yet judge whether the write slowdown is acceptable.\n\nAgree a write-latency limit, validate representative tenants under production-like traffic and concurrent writes, then consider a staged trial if those results meet the read and write goals. No rollout has occurred."
+  },
+  {
+    "id": "H4",
+    "response": "Attachment delivery was restored at 09:24 UTC. Some attachments sent between 09:10 and 09:24 UTC were not delivered and have not been resent. If your attachment was not delivered, please resend it. Message text was delivered normally."
+  },
+  {
+    "id": "H5",
+    "response": "A **dry run** previews a change without saving it. **Applying** the change saves it. Use the disposable demo account `sam` for this example.\n\n1. **Preview the rename:**\n\n   ```bash\n   roster rename --user sam --name Samira --dry-run\n   ```\n\n   Expected: `Would rename sam to Samira`. The display name stays unchanged.\n\n2. **Apply the rename by omitting `--dry-run`:**\n\n   ```bash\n   roster rename --user sam --name Samira\n   ```\n\n   Expected: `Renamed sam to Samira`. This time, the display name changes.\n\n3. **Check the saved name:**\n\n   ```bash\n   roster show --user sam\n   ```\n\n   Expected: `Samira`, confirming that the change was saved."
+  },
+  {
+    "id": "H6",
+    "response": "Friday works for the new layouts with the existing analytics links. The new dashboard needs three additional working days, so the full scope would be ready the following Wednesday.\n\nPlease choose between these two plans:\n\n1. **Recommended: ship the layouts Friday.** Use the existing analytics links, then add the dashboard the following Wednesday.\n2. **Keep the full scope together.** Move the release of both the layouts and dashboard to the following Wednesday.\n\nWhich option should we use?"
+  }
+]

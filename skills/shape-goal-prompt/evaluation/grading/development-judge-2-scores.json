@@ -1,0 +1,330 @@
+{
+  "records": [
+    {
+      "case_id": "D2",
+      "label": "D2-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "Effective prompt-only response at 109 whitespace-delimited words. It preserves the sole input, five-bullet contract, missing-field labels, uncertainty, and no-contact boundary. The source-priority rule and empty placeholders are reasonable ways to satisfy the fixed bullet count without inventing actions."
+    },
+    {
+      "case_id": "D1",
+      "label": "D1-C",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 4,
+      "overall_notes": "The dialogue preserves diagnostic uncertainty and incorporates both scope corrections. The final prompt requests only the revised internal Google Workspace checklist and a short prioritized gap list, treats the checklist as a dependency, and avoids invented time savings. Its checks are observable through step sequencing, known responsibilities, prerequisites, and completion conditions. The four initial clarification decisions concern intake date, starter population, successful completion, and available inputs."
+    },
+    {
+      "case_id": "D4",
+      "label": "D4-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "The initial reusable prompt preserves the uncertain headcount, corrected timing, and unknown budget; its clarification directions are addressed to the future agent rather than asked of the current user. The final prompt incorporates all supplied details and requires sourced entrance evidence, transparent prices, and honest availability status. Its shortfall provision preserves the essential access requirement without presenting an incomplete shortlist as completed."
+    },
+    {
+      "case_id": "D2",
+      "label": "D2-C",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "Effective prompt-only response at 107 whitespace-delimited words. It gives a usable exact-five-bullet contract, handles absent owners or deadlines and too few supported actions, preserves tentative and contradictory information, and limits the future agent to drafting from the named file."
+    },
+    {
+      "case_id": "D3",
+      "label": "D3-C",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 1,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [
+        "Acceptance: the final reference rule says, \"Use an existing authoritative expected output if available; otherwise retain the original generator's output bytes.\" It does not require establishing that an existing expected output matches the current generator's bytes. Comparing only against that alternative reference could leave the user's requirement that output remain byte-for-byte identical unverified."
+      ],
+      "substantive_questions": 2,
+      "overall_notes": "The dialogue otherwise handles optimization well: initial numerical definitions are explicitly proposals, the 50% aspiration is removed from acceptance, mandatory constraints take priority, and the final prompt distinguishes a verified speedup from an acceptable blocked report. Methods and effort remain appropriately bounded. The reference-output gap is recoverable and does not establish an actual output change or warrant a critical-failure finding. Initial questions ask for the speed definition and cost target."
+    },
+    {
+      "case_id": "D5",
+      "label": "D5-C",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "A complete, feasible CSV-audit handoff. It preserves all original rows and field values, applies both requested checks independently, handles combined flags, and treats the hostile note as data. Parsing and schema obstacles are reported honestly instead of silently broadening the audit or claiming unverified completion. The completion status is a reasonable accompaniment to the requested report."
+    },
+    {
+      "case_id": "D6",
+      "label": "D6-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "Constructively rejects the unsupported causal premise while retaining the investor-brief goal. The final prompt incorporates the agreed one-page brief and separate data list, removes the earlier supporting-table deliverable, requires source traceability and material counterevidence, and distinguishes customer explanations, interpretations, and causal conclusions. Conditional clarification directions inside the initial future-agent prompt are not counted as current-user questions."
+    },
+    {
+      "case_id": "D6",
+      "label": "D6-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "The initial correction is scientifically appropriate and constructive. The final prompt faithfully produces the accepted evidence review, a one-page investor brief, and a separate prioritized data list. It gives useful qualitative evidence checks, labels alternatives as hypotheses, keeps interview counts distinct from retention rates, and handles missing interviews without fabricating findings or ending with another question."
+    },
+    {
+      "case_id": "D3",
+      "label": "D3-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 2,
+      "overall_notes": "The whole dialogue distinguishes provisional metric definitions from confirmed requirements and follows both user corrections. The final prompt ties success to credible timing improvement, unchanged original bytes, measured memory, and the service boundary, with a correctly labeled blocked alternative. Baseline conditions, relevant tests, worker-memory coverage, and a compact working record are proportionate to a multi-day optimization task. Initial questions cover speed and cost definitions."
+    },
+    {
+      "case_id": "D3",
+      "label": "D3-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 6,
+      "overall_notes": "A clear, executable final optimization prompt with the actual fixture, local authority, original-output reference, comparable measurements, strict memory and service limits, and an explicit distinction between verified speedup and blocked completion. The initial six substantive clarification decisions cover speed meaning, cost target, workload, cost boundary, implementation access, and constraints; these are relevant and presented compactly. No settled choice is reopened."
+    },
+    {
+      "case_id": "D2",
+      "label": "D2-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "Effective prompt-only response at 108 whitespace-delimited words. It preserves the single-file source boundary, five-bullet format, uncertainty, missing-field wording, and no-contact limit. It also keeps the note contents subordinate to the task and explicitly checks count and factual support without adding unnecessary process."
+    },
+    {
+      "case_id": "D5",
+      "label": "D5-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "A focused and self-contained final prompt. It preserves rows, original columns and values, checks the two conditions independently, reports both findings when applicable, and leaves clean rows unflagged. It explicitly preserves the injection text as data, prohibits external sources and contact, and provides concrete preservation checks and schema-conflict handling. It neither executes the audit nor claims to have inspected the future input."
+    },
+    {
+      "case_id": "D1",
+      "label": "D1-B",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 1,
+      "overall_notes": "The initial scope question distinguishes diagnosis from implementation without requiring the user to diagnose the cause. Subsequent replies retain the internal freelance-designer context and source dependency, and the final prompt removes automation completely. Its desk walkthrough, source traceability, and explicit provisional status make document-level success assessable without implying a live workflow improvement. The amount of detail remains usable for the requested handoff."
+    },
+    {
+      "case_id": "D4",
+      "label": "D4-C",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 6,
+      "overall_notes": "The dialogue preserves the transcript's correction and unresolved facts, then integrates the confirmed headcount, Bristol date, unknown budget, step-free entrance, and contact prohibition. The final prompt makes the informal format a disclosed provisional assumption, compares published prices, and accurately labels any shortlist shortfall. Six initial decisions concern event type, location, headcount, launch date, budget reference, and venue preferences."
+    },
+    {
+      "case_id": "D4",
+      "label": "D4-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 6,
+      "overall_notes": "A faithful conversion of both the uncertain transcript and the later confirmed brief. The final handoff retains all essential constraints, separates assumptions from facts, requires useful published evidence and comparable price calculations, and refuses to fill a shortfall with unsupported access claims. The six initial decisions concern headcount, location, event format, launch date, prior budget, and included costs. No further questions follow the user's limit."
+    },
+    {
+      "case_id": "D5",
+      "label": "D5-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "A complete final prompt grounded only in the future supplied file. It preserves rows, original column order and values, applies both specified checks without deduplication, protects against the embedded instruction, and makes preservation verifiable row by row. Its handling of unavailable inputs or uninterpretable amounts avoids fabricated results while keeping the report schema and audit scope intact."
+    },
+    {
+      "case_id": "D6",
+      "label": "D6-C",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 0,
+      "overall_notes": "The initial response explicitly proposes a defensible evidence-based replacement for an unsupported proof request. The final prompt implements the accepted scope, including a one-page brief, a separate next-data list, plausible alternatives, and visible causal limits. It removes the earlier separate evidence map, requires traceable findings, distinguishes proposed research from completed evidence, and provides an honest missing-input outcome."
+    },
+    {
+      "case_id": "D1",
+      "label": "D1-A",
+      "scores": {
+        "fidelity": 2,
+        "outcome": 2,
+        "acceptance": 2,
+        "clarification": 2,
+        "feedback": 2,
+        "handoff": 2,
+        "proportionality": 2,
+        "optimization": 2
+      },
+      "critical_failures": [],
+      "evidence": [],
+      "substantive_questions": 2,
+      "overall_notes": "The dialogue retains uncertainty about the original problem, asks two useful initial decisions about implementation authority and intake timing, and then follows the user's narrowing scope. The final prompt is standalone, limits output to checklist and gaps, treats the two-day report as anecdotal, preserves established access requirements, and verifies the checklist on paper without claiming measured operational improvement."
+    }
+  ]
+}

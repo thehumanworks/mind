@@ -1,0 +1,8 @@
+# Bootstrap profile. Copy into a trusted tooling directory and create mise.lock.
+# These version selectors FLOAT until locked; they are not a reproducibility claim.
+# Git and the target project's compiler/build system are separate prerequisites.
+[tools]
+python = "3.12"
+uv = "latest"
+"aqua:BurntSushi/ripgrep" = "latest"
+"aqua:jqlang/jq" = "latest"

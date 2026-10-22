@@ -1,0 +1,322 @@
+{
+  "r": {
+    "total": 190,
+    "maximum": 192,
+    "critical_failures": [],
+    "dimensions": {
+      "fidelity": 24,
+      "outcome": 24,
+      "acceptance": 23,
+      "clarification": 24,
+      "feedback": 24,
+      "handoff": 24,
+      "proportionality": 23,
+      "optimization": 24
+    },
+    "judges": {
+      "1": 95,
+      "2": 95
+    },
+    "cases": {
+      "D2": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D4": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D6": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "proportionality",
+              "quote": "The brief should be compelling through clarity and specific evidence. It must not claim that interviews alone establish higher retention or a causal effect.",
+              "reason": "The final prompt repeats the same evidentiary limits and no-invention rules in the objective, sources, evidence review, brief instructions, and acceptance section. This is noticeable, tolerable repetition for a two-part writing task; the additional length does not add a separate verification need."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D3": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 15,
+          "evidence": [
+            "Acceptance: the final reference rule says, \"Use an existing authoritative expected output if available; otherwise retain the original generator's output bytes.\" It does not require establishing that an existing expected output matches the current generator's bytes. Comparing only against that alternative reference could leave the user's requirement that output remain byte-for-byte identical unverified."
+          ]
+        }
+      ],
+      "D5": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D1": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ]
+    },
+    "percentage": 98.96
+  },
+  "q": {
+    "total": 188,
+    "maximum": 192,
+    "critical_failures": [],
+    "dimensions": {
+      "fidelity": 24,
+      "outcome": 24,
+      "acceptance": 24,
+      "clarification": 24,
+      "feedback": 24,
+      "handoff": 24,
+      "proportionality": 20,
+      "optimization": 24
+    },
+    "judges": {
+      "1": 92,
+      "2": 96
+    },
+    "cases": {
+      "D2": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D1": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "proportionality",
+              "quote": "This assignment is limited to the revised checklist and the short gap list.",
+              "reason": "The final prompt repeatedly specifies the same two-output limit in the goal, deliverables, constraints, and finish sections. The seven-section scaffold also repeats source and completion qualifications. The result remains usable but carries noticeable scaffolding for a checklist revision and short gap list."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D5": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "proportionality",
+              "quote": "## Constraints and latitude",
+              "reason": "The seven-section scaffold restates preservation and source restrictions after already specifying them in the goal, inputs, deliverable, and audit rules. The generic work-and-finish section adds more framing to a fixed two-check audit. This is tolerable repetition, not an execution or fidelity failure."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D3": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D4": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "proportionality",
+              "quote": "### Work and finish",
+              "reason": "The final work-and-finish paragraph largely repeats the research, selection, evidence, and output requirements already stated under deliverables, acceptance, and constraints. Together with the repeated shortlist and uncertainty instructions, this produces noticeable but tolerable scaffolding."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D6": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "proportionality",
+              "quote": "### Work and finish",
+              "reason": "The final prompt repeats the same source-tracing, no-fabrication, uncertainty, and two-deliverable requirements across the goal, context, deliverables, acceptance, constraints, and finish sections. The repeated scaffold is noticeable for this bounded writing task, though the substantive instructions remain sound."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ]
+    },
+    "percentage": 97.92
+  },
+  "s": {
+    "total": 191,
+    "maximum": 192,
+    "critical_failures": [],
+    "dimensions": {
+      "fidelity": 24,
+      "outcome": 24,
+      "acceptance": 24,
+      "clarification": 23,
+      "feedback": 24,
+      "handoff": 24,
+      "proportionality": 24,
+      "optimization": 24
+    },
+    "judges": {
+      "1": 95,
+      "2": 96
+    },
+    "cases": {
+      "D1": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D4": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "clarification",
+              "quote": "Preferences:",
+              "reason": "The first draft requires an expanded intake before research, including what feels nice and accessibility, dietary, and transport requirements in addition to headcount, date, time, budget, location, and event type. Some preference topics could have remained disclosed assumptions or optional checks. This creates avoidable clarification burden, although the final reply correctly obeys the later no-more-questions instruction."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D2": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D3": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D5": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ],
+      "D6": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": []
+        }
+      ]
+    },
+    "percentage": 99.48
+  }
+}

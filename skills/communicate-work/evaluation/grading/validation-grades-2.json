@@ -1,0 +1,366 @@
+[
+  {
+    "case_id": "H1",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Answers 'Not yet' immediately and preserves the implementation status, passed local tests, and required staging pass in the requested single sentence."
+  },
+  {
+    "case_id": "H1",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Answers the shipping question directly in one sentence, with both the completed work and the unmet staging prerequisite."
+  },
+  {
+    "case_id": "H1",
+    "candidate": "C",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "The single sentence gives the correct readiness decision and makes passing the pending staging run a prerequisite to shipping."
+  },
+  {
+    "case_id": "H2",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 1
+    },
+    "critical_failures": [],
+    "reason": "Accurately explains the proposal, uniqueness constraint, competing inserts, retry behavior, tenant scope, retention boundary, and absence of execution guarantees. The standalone sentence 'The database constraint enforces uniqueness even when requests arrive at the same time' repeats the mechanism and race outcome already established in the opening and numbered steps."
+  },
+  {
+    "case_id": "H2",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 1
+    },
+    "critical_failures": [],
+    "reason": "Preserves all technical guarantees and limits and clearly labels the design as unimplemented and untested. 'The database constraint is what prevents both racing inserts from succeeding' repeats step 2, which already says the constraint allows exactly one insert to succeed; this adds redundancy for the backend engineer."
+  },
+  {
+    "case_id": "H2",
+    "candidate": "C",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 1
+    },
+    "critical_failures": [],
+    "reason": "The race, stored-job reuse, tenant and seven-day boundaries, proposal status, and excluded guarantees are all accurate. 'The database constraint enforces uniqueness at insertion, so the two competing requests cannot both create a job for the same retained pair' substantially repeats the preceding paragraph's constraint and exactly-one-insert explanation."
+  },
+  {
+    "case_id": "H3",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Leads with the justified recommendation, reports all three measurements and correct percentage changes, preserves the coverage gaps and undefined write limit, and makes wider rollout contingent on further validation. The table and limits provide decision-relevant detail."
+  },
+  {
+    "case_id": "H3",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "The immediate recommendation is supported by accurate read, write, and storage results. The response states the narrow benchmark coverage, missing production and concurrent-write conditions, and absent acceptance threshold, then gives a conditional validation plan without claiming rollout."
+  },
+  {
+    "case_id": "H3",
+    "candidate": "C",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Clearly answers against a global rollout yet, quantifies the benefits and costs correctly, explains the untested conditions and unresolved write tolerance, and identifies the next decision and validation steps. No trial or rollout result is invented."
+  },
+  {
+    "case_id": "H4",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Gives the restoration status and affected time window, distinguishes failed attachments from delivered text, and clearly asks customers to resend failed attachments. The unknown customer count and brief apology fit a short customer update without technical jargon."
+  },
+  {
+    "case_id": "H4",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Concise customer language preserves restoration, affected attachments and time window, unchanged message-text delivery, and the conditional resend instruction. Omitting the unknown affected-customer count does not alter the customer's required action or the incident scope."
+  },
+  {
+    "case_id": "H4",
+    "candidate": "C",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Immediately states the attachment issue, then restoration and the resend requirement, while correctly preserving normal text delivery. The short apology is appropriate; the omitted unknown customer count is incidental to this customer-facing action."
+  },
+  {
+    "case_id": "H5",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Defines dry run plainly and provides a small, ordered demonstration on the disposable account. All commands and expected outputs match the facts, and the explanation identifies unchanged versus saved state without claiming execution."
+  },
+  {
+    "case_id": "H5",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Explains preview versus saving immediately, identifies the disposable account, and guides the learner through preview, apply, and verification with accurate expected outputs and observations. The three-step detail is useful instruction."
+  },
+  {
+    "case_id": "H5",
+    "candidate": "C",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "The tiny guided example accurately explains the flag's effect, preserves the disposable-account context, and supplies each expected result and what it demonstrates. It presents commands as an exercise rather than completed execution."
+  },
+  {
+    "case_id": "H6",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Opens with what is feasible Friday and the dashboard's added time, then presents both concrete scope/date choices and engineering's recommendation. The approval status and final choice request are clear, with no invented deadline."
+  },
+  {
+    "case_id": "H6",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Explains the Friday-versus-Wednesday scope tradeoff immediately and provides both authorized alternatives, the recommended split release, and the pending approval decision. Repeating dates within labeled options helps compare the choices."
+  },
+  {
+    "case_id": "H6",
+    "candidate": "C",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "States the Friday scope and Wednesday full-scope date, provides both concrete alternatives, and asks the user to choose. The recommendation is clear; the open choice appropriately communicates that no plan is yet settled."
+  },
+  {
+    "case_id": "R1",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Removes 'was able to' while retaining both implementation and the preceding investigation of several files. It supplies the requested concise rewrite without adding evidence or execution claims."
+  },
+  {
+    "case_id": "R1",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "The direct rewrite preserves the requested fix and the investigation of several files, removes unnecessary framing, and adds no unsupported detail."
+  },
+  {
+    "case_id": "R2",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Replaces the wordy introductory framing with a concise opening that states only the supplied topic, without inventing migration status or next steps."
+  },
+  {
+    "case_id": "R2",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Clearly and economically identifies the update's topic and adds no migration outcome or blocker. The short label is appropriate for an opening."
+  },
+  {
+    "case_id": "R3",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Replaces the nominalization with the precise verb 'invalidates' and preserves the after-write timing without adding an implementation mechanism or read guarantee."
+  },
+  {
+    "case_id": "R3",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "The shorter active sentence retains the system, cached data, and after-write timing exactly, while adding no unsupported technical claim."
+  },
+  {
+    "case_id": "R4",
+    "candidate": "A",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 2,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Removes one layer of hedging while 'Early measurements suggest' still preserves the preliminary evidence. 'Only local tests ran' retains the test boundary, producing a shorter, more direct update without asserting a proven production benefit."
+  },
+  {
+    "case_id": "R4",
+    "candidate": "B",
+    "scores": {
+      "answer_first": 2,
+      "decision_completeness": 2,
+      "actionability": 2,
+      "audience_fit": 1,
+      "scanability": 2,
+      "economy": 2
+    },
+    "critical_failures": [],
+    "reason": "Preserves the preliminary evidence and local-only test boundary and shortens the second sentence. However, 'Early measurements suggest the change may reduce timeout frequency' is unchanged, so the rewrite only partly fulfills the request for a more confident update."
+  }
+]

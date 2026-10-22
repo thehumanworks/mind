@@ -1,0 +1,6 @@
+{
+  "development/requests.json": "996fb6577c7aad6148e65b083ef5955e0fd0e0135d374921882157e7a8c8d602",
+  "grading/fact-checks.json": "02f6a0f8a8ed225dffcc768137483d1fc7f4fc6241c9d154c7008f4047f68580",
+  "holdout/requests.json": "a1f0b19a7084a6500b733dffcbcd722714ffb625e34117118207a1fd15af954f",
+  "protocol.md": "ded2003dc6d63b83feedc6c44bb9873426f5d0e6a19a11362b20d59276a9e231"
+}

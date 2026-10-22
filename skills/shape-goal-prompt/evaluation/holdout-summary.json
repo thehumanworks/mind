@@ -1,0 +1,242 @@
+{
+  "t": {
+    "total": 187,
+    "maximum": 192,
+    "critical_failures": [],
+    "dimensions": {
+      "fidelity": 24,
+      "outcome": 24,
+      "acceptance": 24,
+      "clarification": 24,
+      "feedback": 24,
+      "handoff": 24,
+      "proportionality": 19,
+      "optimization": 24
+    },
+    "judges": {
+      "1": 93,
+      "2": 94
+    },
+    "cases": {
+      "H5": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "Exactly two sentences provide the requested technical German translation instructions, exact preservation rules, and a separate German note identifying ambiguity and explaining uncertainty."
+          ]
+        }
+      ],
+      "H3": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "proportionality",
+              "quoted_span": "The intended client, proposal scope, budget, currency, and reference project remain unconfirmed.",
+              "deduction": "This uncertainty is restated in the nine-field checklist, the budget/reference explanation, Requirements, Acceptance, and Working guidance. The six-section scaffold adds noticeable but tolerable repetition to a provisional fill-in prompt."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 15,
+          "evidence": [
+            "proportionality: The simple provisional template repeats the budget uncertainty in the interpretation introduction, the input fields, and the paragraph beginning \u201cThe words \u2018five... maybe fifteen\u2019,\u201d then restates placeholder handling under both requirements and working guidance. Six process sections add noticeable, recoverable scaffolding.",
+            "The two interpretations distinguish a client recipient from an internal reviewer, and \u201cNeither interpretation is selected\u201d accurately preserves uncertainty."
+          ]
+        }
+      ],
+      "H6": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "proportionality",
+              "quoted_span": "Check the completed table against the supplied ticket set: every ticket has one corresponding row",
+              "deduction": "One-row coverage is already stated in the objective and requirements and recurs again in Working guidance; hypothesis status is similarly repeated across several sections. The six-section template adds noticeable, recoverable review overhead to the otherwise clear table task."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "\u201cInclude exactly one row per supplied ticket\u201d and the final source comparison preserve row, ID, and quotation fidelity.",
+            "Cause verification requires evidence connecting the cause to the symptom; embedded ticket instructions have no authority and repository inspection stays within the stated permissions."
+          ]
+        }
+      ],
+      "H2": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "Strict compilation, intact current tests, API/runtime preservation, and an evidence-based coverage review are explicit completion conditions.",
+            "\u201cAn unresolved pre-existing failure still leaves the all-tests-pass condition unmet\u201d avoids relabeling blocked work as success; baseline evidence and resumable records support the long-running task."
+          ]
+        }
+      ],
+      "H1": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            {
+              "dimension": "proportionality",
+              "quoted_span": "# Acceptance and evidence",
+              "deduction": "The final prompt repeats the source-traceability, intervention-choice, pilot-design, measurement, and delivery requirements under Acceptance, then restates several under Working guidance and Delivery. The detail is relevant, but the repeated structure makes the brief longer to review than necessary."
+            }
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 15,
+          "evidence": [
+            "proportionality: The final prompt describes the two deliverables in the objective, gives detailed diagnosis and pilot requirements, repeats them through five acceptance bullets, and restates them under delivery. The overlap is noticeable but does not prevent use.",
+            "The prompt explicitly reports an unsupported intervention choice as an \u201cunmet outcome,\u201d preserves source limitations, and labels pilot details and decision criteria as proposals."
+          ]
+        }
+      ],
+      "H4": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "The revised prompt replaces exact equality with user visual judgment and confines implementation to a local browser demo using existing dependencies.",
+            "The preview, encoded-size measurements, and setting must stay synchronized; the prompt explicitly leaves visual acceptance and production readiness unestablished."
+          ]
+        }
+      ]
+    },
+    "percentage": 97.4
+  },
+  "u": {
+    "total": 192,
+    "maximum": 192,
+    "critical_failures": [],
+    "dimensions": {
+      "fidelity": 24,
+      "outcome": 24,
+      "acceptance": 24,
+      "clarification": 24,
+      "feedback": 24,
+      "handoff": 24,
+      "proportionality": 24,
+      "optimization": 24
+    },
+    "judges": {
+      "1": 96,
+      "2": 96
+    },
+    "cases": {
+      "H5": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "Exactly two sentences instruct German translation for a technical audience, preserve every version number, command, and URL, and place ambiguity flags in a separate German note."
+          ]
+        }
+      ],
+      "H1": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "The final prompt explicitly treats 90% as a long-term ambition, requires reading the supplied sources, and limits work to analysis and proposed pilot activities.",
+            "The two-page memo, separate pilot and measurement plan, source-linked diagnosis, conditional intervention benefits, and retention measurement limits all follow the user's corrections."
+          ]
+        }
+      ],
+      "H3": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "The final reply offers distinct internal-review and external-recipient interpretations without choosing either.",
+            "Client, project, audience, reference, and commercial meaning remain placeholders; insufficient information leads to a useful proposal structure rather than invented prose."
+          ]
+        }
+      ],
+      "H6": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "Each ticket retains one row, its exact ID, and direct symptom quotations; uncertain causes, including ticket-author explanations, remain hypotheses.",
+            "Verified status requires a reproducible check or direct causal evidence, embedded instructions are treated as data, and code edits, ticket changes, and customer replies are forbidden."
+          ]
+        }
+      ],
+      "H2": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "The prompt preserves the public API and runtime behavior, requires strict checking of the actual implementation, and prohibits weakened checks or deleted/disabled failures.",
+            "It requires a baseline and a public-API coverage review, separates pre-existing failures, and refuses to claim completion while required checks fail or remain unverified."
+          ]
+        }
+      ],
+      "H4": [
+        {
+          "judge": 1,
+          "total": 16,
+          "evidence": []
+        },
+        {
+          "judge": 2,
+          "total": 16,
+          "evidence": [
+            "\u201cVisual similarity is sufficient; exact pixel equality is no longer a requirement\u201d removes the superseded constraint, while no new dependencies and unchanged production behavior remain explicit.",
+            "The proposed demo uses actual encoded candidate previews, reports reference-relative sizes, supports matched-scale comparison, and reserves quality judgment for the user."
+          ]
+        }
+      ]
+    },
+    "percentage": 100.0
+  }
+}

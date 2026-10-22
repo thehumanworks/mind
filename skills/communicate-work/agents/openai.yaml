@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communicate work clearly"
+  short_description: "Clear updates, decisions, and technical explanations"
+  default_prompt: "Use $communicate-work to turn these work notes into a clear, concise update with the outcome, supporting facts, and any decision I need to make."

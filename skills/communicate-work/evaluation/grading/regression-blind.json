@@ -1,0 +1,38 @@
+[
+  {
+    "id": "R1",
+    "request": "Tighten this work update without changing its meaning.",
+    "facts": "The complete message is: 'After investigating several files, I was able to implement the requested fix.' No other work record is available.",
+    "candidates": {
+      "A": "I implemented the requested fix after investigating several files.",
+      "B": "I implemented the requested fix after investigating several files."
+    }
+  },
+  {
+    "id": "R2",
+    "request": "Make this opening concise without adding information.",
+    "facts": "The complete message is: 'I would like to provide an update regarding the migration.' No migration status or blocker is supplied.",
+    "candidates": {
+      "A": "Migration update:",
+      "B": "Update on the migration:"
+    }
+  },
+  {
+    "id": "R3",
+    "request": "Make this technical sentence clearer and shorter while preserving its claims.",
+    "facts": "The complete sentence is: 'The system performs an invalidation of cached data following a write.' The sentence does not specify how invalidation works or guarantee the result of the next read.",
+    "candidates": {
+      "A": "After a write, the system invalidates cached data.",
+      "B": "The system invalidates cached data after a write."
+    }
+  },
+  {
+    "id": "R4",
+    "request": "Make this update shorter and more confident.",
+    "facts": "The complete message is: 'Early measurements suggest the change may reduce timeout frequency. Only local tests have run.' The measurements are preliminary and no staging or production tests occurred.",
+    "candidates": {
+      "A": "Early measurements suggest the change lowers timeout frequency. Only local tests ran.",
+      "B": "Early measurements suggest the change may reduce timeout frequency. Tested only locally."
+    }
+  }
+]

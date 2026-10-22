@@ -1,0 +1,157 @@
+{
+  "w": {
+    "total": 84,
+    "maximum": 96,
+    "critical_failures": [],
+    "dimensions": {
+      "fidelity": 11,
+      "outcome": 12,
+      "acceptance": 12,
+      "clarification": 6,
+      "feedback": 12,
+      "handoff": 12,
+      "proportionality": 7,
+      "optimization": 12
+    },
+    "judges": {
+      "1": 41,
+      "2": 43
+    },
+    "cases": {
+      "R6": [
+        {
+          "judge": 1,
+          "total": 14,
+          "evidence": [
+            "Clarification: 'I'd revise the goal' and 'proposed framing' accurately mark a change from causal proof to an evidence-limited investor case, but the reply supplies extensive execution instructions without settling whether that revised assignment meets the user's need.",
+            "Proportionality: the inability to establish retention uplift or causation is repeated in the introduction, objective, evidence boundary, analysis guidance, investor narrative, and acceptance criteria. The repetition is noticeable for this first framing exchange."
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 15,
+          "evidence": [
+            "Clarification: \"Here's a prompt for that proposed framing\" proceeds directly to detailed instructions without inviting the user to settle the material revision from proving a causal effect to assessing a retention hypothesis.",
+            "The revision is explicitly proposed, and interviews are never represented as establishing an uplift or causality. Consequently this is a sequencing weakness, not invented agreement or a fidelity failure.",
+            "The detailed evidence distinctions, source locations, sample-count limits, counterevidence, and acceptance checks directly support the requested investor brief and justify the prompt's length."
+          ]
+        }
+      ],
+      "R1": [
+        {
+          "judge": 1,
+          "total": 13,
+          "evidence": [
+            "Fidelity: 'Examine the journey from receiving welcome information through completing signup' fixes an endpoint that the user has not established as sufficient for onboarding readiness. This is a recoverable scope assumption, not evidence of a core factual contradiction.",
+            "Clarification: the reply asks implementation-versus-handoff scope and the intake date, but leaves the meaning of a starter being ready unresolved. It also supplies the full workflow before the expressly unresolved delivery scope is settled.",
+            "Proportionality: the provisional prompt develops separate implementation and handoff criteria and stopping instructions before the scope answer, adding noticeable review burden to an initial goal-clarification exchange."
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 14,
+          "evidence": [
+            "Clarification: asks about implementation authority and the intake date, but leaves the actual onboarding completion milestone implicit. The draft bounds the journey at \"completing signup\" without resolving whether readiness requires more.",
+            "Clarification/proportionality: \"Delivery scope: unresolved\" is followed by a substantial six-section execution draft. The alternative delivery branches, priorities, acceptance criteria, and stopping instructions create avoidable review burden before that consequential choice is settled.",
+            "The implementation default and acceptance criteria are explicitly proposed, so they are not treated as invented agreement or binding unsupported requirements."
+          ]
+        }
+      ],
+      "R3": [
+        {
+          "judge": 1,
+          "total": 14,
+          "evidence": [
+            "Clarification: the reply expressly says target and budget definitions remain unresolved, but proceeds to a detailed executable workflow before obtaining those consequential decisions. The uncertainty is disclosed, so this is a recoverable sequencing weakness rather than an invented agreement.",
+            "Proportionality: extensive measurement fields, execution guidance, resumable-work checkpoints, and stopping instructions precede agreement on the basic target. That scaffolding is more than is needed to settle this initial request."
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 14,
+          "evidence": [
+            "Clarification: the reply says the target definitions and time allowance remain unresolved, yet proceeds into an elaborate execution prompt before the user settles those decisions. Required output invariants are proposed generally rather than explored with a discriminating question.",
+            "Proportionality: the initial target question, proposed objective thresholds, explicit 0.5-times acceptance thresholds, and multiple completion/tradeoff instructions repeat substantial material while the target is still provisional. Optional checkpoint guidance also increases first-turn scaffolding.",
+            "All numerical interpretations and preservation requirements are clearly marked as proposals requiring confirmation. This avoids a fidelity or invented-agreement failure, and the comparable measurement and time-bounded stopping rules are sound."
+          ]
+        }
+      ]
+    },
+    "percentage": 87.5
+  },
+  "v": {
+    "total": 88,
+    "maximum": 96,
+    "critical_failures": [],
+    "dimensions": {
+      "fidelity": 12,
+      "outcome": 12,
+      "acceptance": 10,
+      "clarification": 12,
+      "feedback": 12,
+      "handoff": 6,
+      "proportionality": 12,
+      "optimization": 12
+    },
+    "judges": {
+      "1": 44,
+      "2": 44
+    },
+    "cases": {
+      "R3": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            "Handoff: this is an appropriate clarification step, but the requested standalone agent prompt has not yet been supplied. The eventual output contract and execution boundaries remain to be assembled after the answers."
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 15,
+          "evidence": [
+            "Handoff: the response supplies clarification questions and a measurement approach, but no standalone agent prompt or complete executor input/output contract yet.",
+            "The response correctly preserves \"a couple of days\" and \"Don't do the work yet,\" proposes comparable baseline/final evidence, and requires honest reporting of unmet targets."
+          ]
+        }
+      ],
+      "R1": [
+        {
+          "judge": 1,
+          "total": 14,
+          "evidence": [
+            "Acceptance: the reply appropriately asks what marks readiness, but no verification method or evidence standard has yet been provided; these remain necessary for the final prompt.",
+            "Handoff: the exchange is a focused clarification turn and does not yet supply the requested standalone agent prompt with inputs, output contract, and execution boundaries."
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 14,
+          "evidence": [
+            "Acceptance: the response asks \"what marks a new starter as ready\" but does not yet establish an agreed completion check or a method for verifying that onboarding works.",
+            "Handoff: this is a focused clarification turn, not yet a standalone executable prompt with inputs, deliverables, and verification instructions.",
+            "The questions appropriately separate implementation versus a fix plan, the deadline, and the readiness milestone while leaving diagnosis to the agent."
+          ]
+        }
+      ],
+      "R6": [
+        {
+          "judge": 1,
+          "total": 15,
+          "evidence": [
+            "Handoff: the reply proposes a sound objective and evidence standard, but the requested standalone research-agent prompt is deferred pending the user's answer. Inputs, final output contract, and completion guidance have not yet been assembled."
+          ]
+        },
+        {
+          "judge": 2,
+          "total": 15,
+          "evidence": [
+            "Handoff: \"Should I build the prompt around that objective\" leaves the actual standalone prompt and full delivery contract for a subsequent turn.",
+            "The proposed objective retains the investor brief while correctly rejecting causal proof from interviews alone. Traceable passages, contrary accounts, alternative explanations, and evidence limits provide an honest evidence standard."
+          ]
+        }
+      ]
+    },
+    "percentage": 91.67
+  }
+}
